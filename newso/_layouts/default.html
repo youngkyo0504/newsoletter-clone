@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+
+    <!-- 연결된 js와 css 이 있으면 불러옴  -->
+
+    {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+    {% endif %}
+
+    {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+    <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+    {% endfor %}
+    {% endif %}
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics 뉴소레터 구글 analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV1PHRXGH3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QV1PHRXGH3');
+    </script>
+    {% feed_meta %}
+    {% seo %}
+</head>
+
+<body>
+    {% include navigation.html %}
+    {{ content }}
+
+
+</body>
+
+</html>

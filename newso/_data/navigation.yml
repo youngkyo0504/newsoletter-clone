@@ -1,0 +1,6 @@
+- name: 뉴소레터 이야기
+  link: /
+- name: 이전 뉴소레터
+  link: /category/frontend.html
+- name: 고객센터
+  link: /category/backend.html
