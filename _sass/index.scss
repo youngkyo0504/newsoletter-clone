@@ -1,8 +1,8 @@
 :root {
   --newso-main-color-green: #006933;
   --newso-main-color-blue: #3981c3;
-  --newso-text-color-ivory: #fff8e6;
-  --newso-text-color-ivory-subscription: #fff8e6;
+  --newso-text-color-ivory: rgba(255, 248, 230, 0.8);
+  --newso-text-color-ivory-subscription: #f9f7ed;
   --newso-text-color-gray: #666666;
   --newso-border-color-gray: #979797;
   --newso-main-text-color-black: #000000;
@@ -29,7 +29,11 @@ body {
   margin: 0 auto;
   //   background-color: greenyellow;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .flex-row {
   display: flex;
   align-items: center;

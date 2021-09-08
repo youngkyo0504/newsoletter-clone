@@ -1,6 +1,6 @@
 .subscription {
   background-color: var(--newso-background-color-ivory-opacity-90);
-  padding: 7.1rem 0 0 0;
+  padding: 15.8rem 0 0 0;
 }
 .subscription-img {
   max-width: 50.6rem;
@@ -8,4 +8,51 @@
 }
 .subscription-img img {
   width: 100%;
+}
+.subscription-inducement {
+  //이건 지워야한다 마진 탑은
+  margin-top: 160px;
+  height: 20rem;
+  background-color: var(--newso-main-color-green);
+  color: var(--newso-text-color-ivory-subscription);
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+.inducement-strong {
+  font-size: 2.1rem;
+  font-family: "Cafe24SsurroundAir";
+  letter-spacing: -1.13px;
+}
+
+.inducement-description {
+  margin-top: 1rem;
+  opacity: 0.6;
+  font-size: 1.4rem;
+  letter-spacing: -0.88px;
+}
+.btn-list {
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  font-family: "Cafe24SsurroundAir";
+}
+.inducement-btn {
+  margin-left: 1.7rem;
+  padding: 1.9rem 3rem 1.5rem;
+}
+.btn-latest-news {
+  color: rgba(255, 248, 230, 0.7);
+  border-radius: 33px;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+}
+.btn-subscribe {
+  color: var(--newso-main-color-green);
+  border-radius: 33px;
+  background-color: var(--newso-text-color-ivory-subscription);
 }
