@@ -1,2 +1,0 @@
-# newso
-newsoletter
