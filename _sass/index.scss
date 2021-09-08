@@ -1,3 +1,18 @@
+:root {
+  --newso-main-color-green: #006933;
+  --newso-main-color-blue: #3981c3;
+  --newso-text-color-ivory: #fff8e6;
+  --newso-text-color-ivory-subscription: #fff8e6;
+  --newso-text-color-gray: #666666;
+  --newso-border-color-gray: #979797;
+  --newso-main-text-color-black: #000000;
+  --newso-sub-text-color-black: #000000;
+  --newso-background-color-ivory: #fff8e8;
+  --newso-background-color-ivory-brighthen: #fffdf6;
+  --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
+}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 @font-face {
   font-family: "Cafe24SsurroundAir";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")

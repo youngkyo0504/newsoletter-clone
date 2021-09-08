@@ -1,22 +1,36 @@
 .nav-wrraper {
-  height: 85px;
-  background-color: #006933;
+  height: 1.74038%;
+  background-color: var(--newso-main-color-green);
+  border-bottom: #1d1d1b solid 2px;
 }
 .navbar {
-  margin: 21px auto 18px;
+  margin: 2.1rem auto 1.8rem;
 }
 .newso-logo {
   width: 114px;
   height: 46px;
+  padding-left: 0.8rem;
 }
 
 .navigation-menu-item {
-  margin: 0 48px 0 0;
-  font-size: 16px;
-  font-weight: normal;
+  margin: 0 3em 0 0;
+  font-size: 1.6rem;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: -0.34px;
-  color: #fff8e6;
+  letter-spacing: -0.67px;
+  color: var(--newso-text-color-ivory);
+}
+
+.subscribe-btn {
+  font-size: 1.6rem;
+  padding: 1.1rem 2rem 1rem 2.1rem;
+  border-radius: 20.5px;
+  background-color: var(--newso-text-color-ivory);
+  color: var(--newso-main-color-green);
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
 }
