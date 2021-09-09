@@ -1,5 +1,23 @@
-<footer>
-    <div>
+<footer class="newso-footer flex-row">
+    <div class="content-wrraper flex-row flex-space-between  ">
+        <div class="contact-address">
+            <div>
+                <span class="contact-us">Contact us</span>
+                <span class="address">
+                    서울시 광진구 능동로 120 건국대학교 창의관 203호 주식회사 앤틀러
+                </span>
+            </div>
+            <div class="copyright-wrraper">
+                <span class="copyright">Copyright © antller. All Rights Reserved.</span>
+            </div>
+        </div>
+        <ul class="icon-list flex-row  ">
+            {% for item in site.data.icon %}
+            <li class="icon"><a href="{{ item.link }}" target="_blank"><img class="" src="{{item.src}}"
+                        alt="{{item.name}}"></a>
+            </li>
+            {% endfor %}
+        </ul>
 
     </div>
 </footer>

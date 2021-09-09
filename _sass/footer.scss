@@ -1,0 +1,28 @@
+.newso-footer {
+  @include spoca-han;
+  height: 12.2rem;
+  font-size: 1.2rem;
+  background-color: var(--newso-footer-background-color);
+}
+
+.contact-us {
+  font-weight: bold;
+  letter-spacing: -0.14px;
+}
+
+.address {
+  letter-spacing: -0.5px;
+}
+.copyright {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright-wrraper {
+  margin-top: 0.7rem;
+}
+
+.icon {
+  height: 2.8rem;
+  margin-left: 1.2rem;
+}

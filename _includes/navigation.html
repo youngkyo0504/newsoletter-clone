@@ -8,10 +8,10 @@
         <div class="flex-row">
             <ul class="navigation-menus flex-row">
                 {% for item in site.data.navigation %}
-                <li class="navigation-menu-item"><a href="{{ item.link }}">{{item.name}}</a></li>
+                <li class="navigation-menu-item"><a target="_blank" href="{{ item.link }}">{{item.name}}</a></li>
                 {% endfor %}
             </ul>
-            <button class="subscribe-btn">구독하기</button>
+            <button class="js-subscribe-btn subscribe-btn">구독하기</button>
         </div>
     </nav>
 </div>

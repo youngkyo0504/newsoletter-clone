@@ -18,7 +18,7 @@
 
     {% if page.custom_js %}
     {% for js_file in page.custom_js %}
-    <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+    <script defer src='{{ site.baseurl }}/assets/js/{{ js_file }}.js' type="text/javascript"></script>
     {% endfor %}
     {% endif %}
 
@@ -38,6 +38,7 @@
 
 <body>
     {% include navigation.html %}
+    {% include modal.html %}
     {{ content }}
     {% include footer.html %}
 </body>

@@ -1,47 +1,59 @@
-:root {
-  --newso-main-color-green: #006933;
-  --newso-main-color-blue: #3981c3;
-  --newso-text-color-ivory: rgba(255, 248, 230, 0.8);
-  --newso-text-color-ivory-subscription: #f9f7ed;
-  --newso-text-color-gray: #666666;
-  --newso-border-color-gray: #979797;
-  --newso-main-text-color-black: #000000;
-  --newso-sub-text-color-black: #000000;
-  --newso-background-color-ivory: #fff8e8;
-  --newso-background-color-ivory-brighthen: #fffdf6;
-  --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
+.subscription {
+  background-color: var(--newso-background-color-ivory-opacity-90);
+  padding: 15.8rem 0 0 0;
 }
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
-@font-face {
-  font-family: "Cafe24SsurroundAir";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
-    format("woff");
+.subscription-img {
+  max-width: 50.6rem;
+  margin: 0 0 0 17.6rem;
+}
+.subscription-img img {
+  width: 100%;
+}
+.subscription-inducement {
+  //이건 지워야한다 마진 탑은
+  margin-top: 160px;
+  height: 20rem;
+  background-color: var(--newso-main-color-green);
+  color: var(--newso-text-color-ivory-subscription);
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
   font-weight: normal;
+  font-stretch: normal;
   font-style: normal;
+  line-height: normal;
 }
-body {
+.inducement-strong {
+  font-size: 2.7rem;
+  font-family: "Cafe24SsurroundAir";
+  letter-spacing: -1.13px;
+}
+
+.inducement-description {
+  color: var(--newso-text-color-ivory-subscription-opacity-6);
+  margin-top: 1rem;
+  // opacity: 0.6;
+  font-size: 1.4rem;
+  letter-spacing: -0.88px;
+}
+.btn-list {
+  font-size: 1.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.75px;
   font-family: "Cafe24SsurroundAir";
 }
-.content-wrraper {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto;
-  //   background-color: greenyellow;
+.inducement-btn {
+  margin-left: 1.7rem;
+  padding: 1.9rem 3rem 1.5rem;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.btn-latest-news {
+  color: rgba(255, 248, 230, 0.7);
+  border-radius: 33px;
+  border: solid 1px rgba(255, 255, 255, 0.3);
 }
-.flex-row {
-  display: flex;
-  align-items: center;
-}
-
-.flex-space-between {
-  justify-content: space-between;
-}
-
-.subscribe-btn {
+.btn-subscribe {
+  color: var(--newso-main-color-green);
+  border-radius: 33px;
+  background-color: var(--newso-text-color-ivory-subscription);
 }

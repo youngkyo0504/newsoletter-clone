@@ -6,14 +6,14 @@ layout: default
 title: 뉴소레터
 custom_css:
 - styles
-- something
-
+custom_js:
+- subscribe
 ---
 
 <main>
     <!-- 구독폼 -->
     <section class="subscription">
-        <div class="content-wrraper flex-row">
+        <div class="content-wrraper flex">
             {% include subscription.html %}
             <div class="subscription-img">
                 <img src="./assets/images/subscription/img-main@2x.png" alt="">
@@ -55,7 +55,7 @@ custom_css:
                     <button class="inducement-btn btn-latest-news">지난 뉴소레터 보기</button>
                 </li>
                 <li>
-                    <button class="inducement-btn btn-subscribe">뉴소레터 구독하기</button>
+                    <button class="js-subscribe-btn inducement-btn btn-subscribe">뉴소레터 구독하기</button>
                 </li>
             </ul>
         </div>

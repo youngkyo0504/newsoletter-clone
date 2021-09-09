@@ -1,0 +1,88 @@
+:root {
+  --newso-main-color-green: #006933;
+  --newso-main-color-blue: #3981c3;
+  --newso-text-color-ivory: #fff8e6;
+  --newso-text-color-ivory-subscription: #f9f7ed;
+  --newso-text-color-ivory-subscription-opacity-9: rgba(249, 247, 237, 0.9);
+  --newso-text-color-ivory-subscription-opacity-6: rgba(249, 247, 237, 0.6);
+  --newso-text-color-gray: #666666;
+  --newso-border-color-gray: #979797;
+  --newso-main-text-color-black: #000000;
+  --newso-sub-text-color-black: #000000;
+  --newso-background-color-ivory: #fff8e8;
+  --newso-background-color-ivory-brighthen: #fffdf6;
+  --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
+  --newso-footer-background-color: #f9f9f9;
+}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spoqa Han Sans Regular";
+  src: url("/assets/font/SpoqaHanSansRegular.ttf") format("truetype");
+}
+body {
+  font-family: "Cafe24SsurroundAir", sans-serif;
+}
+
+@mixin spoca-han {
+  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+}
+
+.content-wrraper {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  //   background-color: greenyellow;
+}
+.flex {
+  display: flex;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.subscribe-btn {
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  /* 모두 채워지지 않으면 vh로 바꾸기  */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-inner {
+  width: calc(100% - 48px);
+  border-radius: 12px;
+  padding: 24px;
+}
