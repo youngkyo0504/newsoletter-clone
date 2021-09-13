@@ -13,6 +13,10 @@
   --newso-background-color-ivory-brighthen: #fffdf6;
   --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
   --newso-footer-background-color: #f9f9f9;
+  --newso-preface-background-color: #fffdf6;
+  --newso-line-color: #231e1f;
+  --newso-blue-color: #3981c3;
+  --newso-red-color: #e05451;
 }
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
@@ -23,6 +27,7 @@
   font-style: normal;
 }
 @font-face {
+  // 이거 지워야됨
   font-family: "Spoqa Han Sans Regular";
   src: url("/assets/font/SpoqaHanSansRegular.ttf") format("truetype");
 }
@@ -31,13 +36,18 @@ body {
 }
 
 @mixin spoca-han {
-  font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
 }
 
+@mixin line {
+  background-color: var(--newso-line-color);
+}
 .content-wrraper {
-  max-width: 1080px;
+  max-width: 1112px;
+  padding: 0 16px 0 16px;
   width: 100%;
   margin: 0 auto;
+
   //   background-color: greenyellow;
 }
 .flex {
@@ -45,23 +55,37 @@ body {
 }
 .sticky {
   position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 2;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 .flex-row {
   display: flex;
   align-items: center;
 }
 .flex-col {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .flex-space-between {
+  display: flex;
   justify-content: space-between;
 }
-
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
 .subscribe-btn {
 }
-
+.margin-auto {
+  margin: auto;
+}
 .overlay {
   background-color: rgba(0, 0, 0, 0.3);
   /* 모두 채워지지 않으면 vh로 바꾸기  */
@@ -85,4 +109,13 @@ body {
   width: calc(100% - 48px);
   border-radius: 12px;
   padding: 24px;
+}
+
+//text color
+.newso-blue-text {
+  color: var(--newso-blue-color);
+}
+
+.newso-red-text {
+  color: var(--newso-red-color);
 }

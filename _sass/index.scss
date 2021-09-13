@@ -1,17 +1,98 @@
 .subscription {
   background-color: var(--newso-background-color-ivory-opacity-90);
-  padding: 15.8rem 0 0 0;
+  padding: 15.8rem 0 7rem 0;
 }
 .subscription-img {
   max-width: 50.6rem;
-  margin: 0 0 0 17.6rem;
+  // margin: 0 0 0 17.6rem;
+  margin: 0 0 0 auto;
 }
 .subscription-img img {
   width: 100%;
 }
+
+//preface 부분
+.newso-description-preface {
+  background-color: var(--newso-preface-background-color);
+  height: 41.5rem;
+  letter-spacing: -0.67px;
+  color: var(--newso-line-color);
+  @include spoca-han;
+
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+.preface-introduction-icons {
+  margin-top: 5em;
+}
+.preface-keywords,
+.preface-introduction {
+  font-size: 1.6rem;
+}
+.preface-second-content {
+  width: 50rem;
+}
+.preface-introduction-icon-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+.preface-first-content {
+  width: 28rem;
+}
+.preface-introduction-icon-container {
+  margin-right: 4rem;
+}
+
+.preface-line {
+  height: 1px;
+  background-color: var(--newso-line-color);
+  margin: 1.6rem 0;
+}
+
+//description 부분
+.description-line {
+  height: 2px;
+  width: 100%;
+  @include line;
+  margin-top: 1.2em;
+  margin-bottom: 2.5em;
+}
+.newso-description {
+  max-width: 1200px;
+  border: solid 2px var(--newso-line-color);
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.67px;
+  margin: 0 auto;
+  @include spoca-han;
+  padding: 3em 0;
+}
+.description-name {
+  font-size: 44px;
+  letter-spacing: -1.83px;
+  font-family: "Cafe24SsurroundAir";
+}
+.newso-description-price {
+  background-color: #ffe5a6;
+}
+.description-text {
+  margin-top: 2em;
+}
+.description-content-wrapper {
+}
+
+.description-introduction {
+  margin-top: 0.9em;
+}
+//inducement부분
 .subscription-inducement {
   //이건 지워야한다 마진 탑은
-  margin-top: 160px;
   height: 20rem;
   background-color: var(--newso-main-color-green);
   color: var(--newso-text-color-ivory-subscription);
