@@ -50,6 +50,13 @@ body {
 
   //   background-color: greenyellow;
 }
+
+@mixin normal-text{
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
 .flex {
   display: flex;
 }

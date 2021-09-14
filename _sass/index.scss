@@ -19,10 +19,7 @@
   color: var(--newso-line-color);
   @include spoca-han;
 
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include normal-text;
 }
 .preface-introduction-icons {
   margin-top: 5em;
@@ -78,12 +75,10 @@
   margin: 0 auto;
   margin-top: 6.25em;
   padding: 3em 0;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+ 
   letter-spacing: -0.67px;
   @include spoca-han;
+  @include normal-text;
 }
 .description-name {
   font-size: 44px;
@@ -110,7 +105,7 @@
   line-height: 1.55;
   letter-spacing: -0.83px;
   font-family: Cafe24Ssurroundair;
-  -webkit-text-stroke: 1px #979797;
+  -webkit-text-stroke: 0.6px #979797;
   font-size: 2rem;
 }
 
@@ -118,7 +113,19 @@
   line-height: 2.06;
   letter-spacing: -0.75px;
   font-size: 1.8rem;
+  list-style: disc inside none;
 }
+
+.issue-img{
+  max-width: 144px ;
+  max-height: 241px;
+  margin-left: 4.5em;
+}
+.issue-img img{
+  width: 100%;
+  height: 100%;
+}
+
 //inducement부분
 .subscription-inducement {
   //이건 지워야한다 마진 탑은
@@ -126,10 +133,7 @@
   background-color: var(--newso-main-color-green);
   color: var(--newso-text-color-ivory-subscription);
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  @include normal-text;
 }
 .inducement-strong {
   font-size: 2.7rem;
@@ -146,12 +150,9 @@
 }
 .btn-list {
   font-size: 1.8rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: -0.75px;
   font-family: "Cafe24SsurroundAir";
+  @include normal-text;
 }
 .inducement-btn {
   margin-left: 1.7rem;
