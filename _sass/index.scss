@@ -53,25 +53,37 @@
 }
 
 //description 부분
+.newso-description-container {
+  font-size: 1.6rem;
+  margin-bottom: 7.5em;
+  margin-top: 7.5em;
+}
+.description-content-wrapper {
+  max-width: 1052px;
+  padding: 0 16px 0 16px;
+  width: 100%;
+  margin: 0 auto;
+}
 .description-line {
   height: 2px;
   width: 100%;
-  @include line;
   margin-top: 1.2em;
   margin-bottom: 2.5em;
+  @include line;
 }
 .newso-description {
   max-width: 1200px;
-  border: solid 2px var(--newso-line-color);
   font-size: 1.6rem;
+  border: solid 2px var(--newso-line-color);
+  margin: 0 auto;
+  margin-top: 6.25em;
+  padding: 3em 0;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.67px;
-  margin: 0 auto;
   @include spoca-han;
-  padding: 3em 0;
 }
 .description-name {
   font-size: 44px;
@@ -84,11 +96,28 @@
 .description-text {
   margin-top: 2em;
 }
-.description-content-wrapper {
+.description-icon {
+  margin-right: 1em;
 }
 
 .description-introduction {
   margin-top: 0.9em;
+}
+
+//description issue
+.description-text-issue {
+  margin-top: 1.25em;
+  line-height: 1.55;
+  letter-spacing: -0.83px;
+  font-family: Cafe24Ssurroundair;
+  -webkit-text-stroke: 1px #979797;
+  font-size: 2rem;
+}
+
+.description-issue-li {
+  line-height: 2.06;
+  letter-spacing: -0.75px;
+  font-size: 1.8rem;
 }
 //inducement부분
 .subscription-inducement {
