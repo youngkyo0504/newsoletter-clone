@@ -50,10 +50,27 @@
 }
 
 //description 부분
+//description 부분 색깔
+.newso-description:nth-child(1) {
+  background-color: #ffe5a6;
+}
+.newso-description:nth-child(2) {
+  background-color: #f5d7a6;
+}
+.newso-description:nth-child(3) {
+  background-color: #c7e4ca;
+}
+.newso-description:nth-child(4) {
+  background-color: #d6e7ec;
+}
+.newso-description:nth-child(5) {
+  background-color: #f9f7ed;
+}
 .newso-description-container {
   font-size: 1.6rem;
   margin-bottom: 7.5em;
   margin-top: 7.5em;
+  margin: 7.5em 1em;
 }
 .description-content-wrapper {
   max-width: 1052px;
@@ -75,7 +92,7 @@
   margin: 0 auto;
   margin-top: 6.25em;
   padding: 3em 0;
- 
+
   letter-spacing: -0.67px;
   @include spoca-han;
   @include normal-text;
@@ -85,9 +102,7 @@
   letter-spacing: -1.83px;
   font-family: "Cafe24SsurroundAir";
 }
-.newso-description-price {
-  background-color: #ffe5a6;
-}
+
 .description-text {
   margin-top: 2em;
 }
@@ -101,7 +116,7 @@
 
 //description issue
 .description-text-issue {
-  margin-top: 1.25em;
+  margin-top: 1em;
   line-height: 1.55;
   letter-spacing: -0.83px;
   font-family: Cafe24Ssurroundair;
@@ -116,14 +131,70 @@
   list-style: disc inside none;
 }
 
-.issue-img{
-  max-width: 144px ;
+.issue-img {
+  max-width: 144px;
   max-height: 241px;
   margin-left: 4.5em;
 }
-.issue-img img{
+.issue-img img {
   width: 100%;
   height: 100%;
+}
+
+//disease 부분
+.number-box {
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1em;
+  margin-right: 0.5em;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 2px solid var(--newso-line-color);
+}
+
+.description-disease-icons {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.disease-support-name {
+  font-size: 2.2rem;
+  @include cafe24;
+}
+
+.disease-icon-container:nth-child(2) {
+  margin: 0 6.25em;
+}
+
+.disease-support-img {
+  margin-top: 1em;
+}
+
+.disease-support-name {
+}
+
+//사양관리
+.insight-img {
+  max-width: 10.6em;
+  max-height: 13.4em;
+  margin-left: 4.5em;
+}
+.insight-img img {
+  width: 100%;
+  height: 100%;
+}
+
+//special
+.description-special-logo {
+  width: 17.9rem;
+  height: 8.9rem;
+}
+.description-special-img {
+  width: 21.6rem;
+  height: 14.9rem;
+}
+
+.description-special-text {
+  margin: 0 4.5em;
 }
 
 //inducement부분

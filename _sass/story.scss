@@ -1,0 +1,44 @@
+.newso-story {
+  padding-top: 15.8em;
+
+  @include normal-text;
+}
+
+.story-title {
+  font-size: 4rem;
+  @include cafe24;
+}
+
+.story-content {
+  font-size: 1.6rem;
+
+  @include spoca-han;
+}
+
+.story-container {
+  margin-bottom: 12rem;
+  // margin-bottom: 7.5em; 16px 기준
+}
+.story-line {
+  height: 2px;
+  width: 100%;
+  margin: 1rem 0;
+  @include line;
+}
+
+.story-content {
+  max-width: 50.1rem;
+}
+
+.story-subtitle {
+  font-weight: bold;
+}
+
+.story-jonnie-img {
+  max-width: 149px;
+  max-height: 212px;
+}
+
+.story-content-first {
+  margin-bottom: 3.75em;
+}

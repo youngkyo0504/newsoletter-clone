@@ -1,5 +1,6 @@
 .nav-wrraper {
   height: 8.7rem;
+  font-size: 1.6rem;
   background-color: var(--newso-main-color-green);
   border-bottom: #1d1d1b solid 2px;
 }
@@ -7,11 +8,15 @@
   margin: 1.95rem auto 1.95rem;
 }
 .newso-logo {
-  width: 114px;
+  width: 116px;
   height: 46px;
   padding-left: 0.8rem;
 }
 
+.newso-logo img {
+  width: 100%;
+  height: 100%;
+}
 .navigation-menu-item {
   margin: 0 3em 0 0;
   font-size: 1.6rem;
@@ -24,7 +29,6 @@
 }
 
 .subscribe-btn {
-  font-size: 1.6rem;
   padding: 1.1rem 2rem 1rem 2.1rem;
   border-radius: 20.5px;
   background-color: var(--newso-background-color-ivory);
@@ -33,4 +37,28 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+}
+
+.subscribe-kakao-btn {
+  padding: 1.1rem 2rem 1rem 2.1rem;
+  border-radius: 20.5px;
+  background-color: var(--newso-background-color-ivory);
+  color: var(--newso-kakao-text-color);
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  margin-left: 1.2rem;
+}
+
+.kakao-channel {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 2px;
+}
+
+.active-url {
+}
+.unactive-url {
+  color: var(--newso-text-color-ivory-opa-40);
 }

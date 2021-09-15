@@ -2,6 +2,7 @@
   --newso-main-color-green: #006933;
   --newso-main-color-blue: #3981c3;
   --newso-text-color-ivory: #fff8e6;
+  --newso-text-color-ivory-opa-40: rgba(255, 248, 230, 0.4);
   --newso-text-color-ivory-subscription: #f9f7ed;
   --newso-text-color-ivory-subscription-opacity-9: rgba(249, 247, 237, 0.9);
   --newso-text-color-ivory-subscription-opacity-6: rgba(249, 247, 237, 0.6);
@@ -14,6 +15,7 @@
   --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
   --newso-footer-background-color: #f9f9f9;
   --newso-preface-background-color: #fffdf6;
+  --newso-kakao-text-color: #3f1d1d;
   --newso-line-color: #231e1f;
   --newso-blue-color: #3981c3;
   --newso-red-color: #e05451;
@@ -50,8 +52,10 @@ body {
 
   //   background-color: greenyellow;
 }
-
-@mixin normal-text{
+@mixin cafe24 {
+  font-family: "Cafe24SsurroundAir";
+}
+@mixin normal-text {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -88,8 +92,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.subscribe-btn {
-}
+
 .margin-auto {
   margin: auto;
 }
@@ -118,6 +121,11 @@ body {
   padding: 24px;
 }
 
+.full-size-fit {
+  width: 100%;
+  height: 100%;
+}
+
 //text color
 .newso-blue-text {
   color: var(--newso-blue-color);
@@ -125,4 +133,11 @@ body {
 
 .newso-red-text {
   color: var(--newso-red-color);
+}
+
+// 푸터 바닥 고정시키기 위함 /
+.contents-wrap {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 122px; /* footer height */
 }

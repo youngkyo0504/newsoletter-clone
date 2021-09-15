@@ -1,18 +1,35 @@
 <div class="sticky nav-wrraper flex-row">
-    <nav class="content-wrraper navbar flex-row flex-space-between">
-        <div class="newso-logo">
-            <a href="">
-                <img src="../assets/images/logo-text/logo-text-2.png" alt="">
-            </a>
-        </div>
+  <nav class="content-wrraper navbar flex-row flex-space-between">
+    <div class="newso-logo">
+      <a href="/">
+        <img src="../assets/images/logo-text/logo-text-2@3x.png" alt="" />
+      </a>
+    </div>
+    <div class="flex-row">
+      <ul class="navigation-menus flex-row">
+        {% if page.url == "/" %} {% for item in site.data.navigation %}
+        <li class="navigation-menu-item">
+          <a  href="{{ item.link }}">{{item.name}}</a>
+        </li>
+        {% endfor %} {% else %} {% for item in site.data.navigation %}
+        <li class="navigation-menu-item">
+          <a   href="{{ item.link }}"  {% if page.url == item.link %} class="active-url" {% else %} class = "unactive-url" {% endif %}>{{item.name}}</a>
+        </li>
+        {% endfor %} {% endif %}
+      </ul>
+      <button class="js-subscribe-btn subscribe-btn">구독하기</button>
+      <button class="subscribe-kakao-btn">
         <div class="flex-row">
-            <ul class="navigation-menus flex-row">
-                {% for item in site.data.navigation %}
-                <li class="navigation-menu-item"><a target="_blank" href="{{ item.link }}">{{item.name}}</a></li>
-                {% endfor %}
-            </ul>
-            <button class="js-subscribe-btn subscribe-btn">구독하기</button>
-            <button>카카오톡 구독하기</button>
+          <div class="kakao-channel">
+            <img
+              class="full-size-fit"
+              src="../assets/images/kakao-channel/icon-sns-kakao@2x.png"
+              alt=""
+            />
+          </div>
+          <div>채널추가</div>
         </div>
-    </nav>
+      </button>
+    </div>
+  </nav>
 </div>
