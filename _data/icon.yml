@@ -1,12 +1,10 @@
 - name: Antller data lab
   link: https://antller.com/
-  src: ../assets/images/icon/animal-data/bn-data.png
 - name: newso insta
   link: https://www.instagram.com/newsoletter/
-  src: ../assets/images/icon/insta/bn-insta.png
 - name: newso mail
   link: mailto:letter@newso.co.kr
-  src: ../assets/images/icon/mail/bn-mail.png
+- name: newso facebook
+  link: https://m.facebook.com/%EB%89%B4%EC%86%8C%EB%A0%88%ED%84%B0-245516950728136/
 - name: kakao story
   link: https://pf.kakao.com/_ZveLs
-  src: ../assets/images/icon/kakao/bn-kakao.png

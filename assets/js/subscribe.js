@@ -4,6 +4,13 @@ subscribe_btns.forEach((btn) => {
 })
 
 function showSubscribeForm() {
-    const modal = document.querySelector(".overlay")
-    modal.hidden = false;
+    const overlay = document.querySelector(".overlay");
+    overlay.hidden = false;
 }
+function closeSubscribeForm(){
+    const overlay = document.querySelector(".overlay");
+    overlay.hidden =true;
+}
+const closeBtn = document.querySelector(".modal-exit")
+closeBtn.addEventListener("click", closeSubscribeForm)
+

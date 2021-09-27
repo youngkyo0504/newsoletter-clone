@@ -14,7 +14,9 @@
 
   @include spoca-han;
 }
-
+.story-content-text {
+  color: #666666;
+}
 .story-container {
   margin-bottom: 12rem;
   // margin-bottom: 7.5em; 16px 기준

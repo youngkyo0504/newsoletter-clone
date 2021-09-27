@@ -1,0 +1,90 @@
+.modal-subscribe {
+  background-color: var(--newso-modal-background-color);
+  width: 47.4rem;
+  height: 56.1rem;
+  padding: 4.8rem 4rem;
+  border-radius: 20px;
+  box-shadow: 30px 30px 41px 0 rgba(0, 0, 0, 0.5);
+  border: solid 2px #231e1f;
+  position: relative;
+  letter-spacing: -0.58px;
+  font-size: 1.4rem;
+  @include normal-text;
+  @include spoca-han;
+}
+
+.modal-subscribe .subscribe-form-input {
+  // width require
+  background-color: transparent;
+  border: solid 1px var(--newso-border-color-gray);
+  border-radius: 4px;
+  height: 4.8rem;
+  padding: 0.9rem;
+}
+.modal-subscribe .stb-form-policy {
+  margin: 2rem 0 3.3rem 0;
+}
+.modal-subscribe .subscribe-form-label {
+  color: var(--newso-text-color-gray);
+  padding-bottom: 0.4rem;
+}
+
+.modal-subscribe .stb-form-policy {
+  letter-spacing: -0.58px;
+}
+.modal-subscribe .stb-form-policy label button {
+  color: var(--newso-main-color-blue);
+  text-decoration: underline;
+}
+
+.modal-subscribe .stb-form-policy label input {
+  border: solid 1px var(--newso-border-color-gray);
+  border-radius: 4px;
+}
+
+.modal-subscribe .modal-subscribe-button {
+  border-radius: 4px;
+  font-size: 2.4rem;
+  width: 100%;
+  letter-spacing: -1px;
+  color: var(--newso-text-color-ivory-subscription);
+  background-color: var(--newso-main-color-green);
+  padding: 1.9rem 8.7rem;
+  height: 6.6rem;
+}
+
+.modal-subscribe .modal-newso-logo-container {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.modal-subscribe .modal-newso-symbol {
+  margin-bottom: 1.2rem;
+  width: 8rem;
+  height: 6.1rem;
+}
+#stb_policy input:checked {
+  background-color: green;
+}
+
+.modal-subscribe .modal-newso-logo {
+  height: 3.4rem;
+  margin-bottom: 1.2rem;
+}
+.modal-subscribe .subscribe-input-container {
+  margin-top: 1.2rem;
+}
+.modal-subscribe .modal-exit {
+  position: absolute;
+  top: 2.6rem;
+  right: 2.6rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.modal-subscribe-btn {
+  letter-spacing: -1px;
+  color: var(--newso-text-color-ivory-subscription);
+  background-color: var(--newso-main-color-green);
+}

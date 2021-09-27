@@ -8,11 +8,11 @@
     <div class="flex-row">
       <ul class="navigation-menus flex-row">
         {% if page.url == "/" %} {% for item in site.data.navigation %}
-        <li class="navigation-menu-item">
+        <li class="navigation-menu-item flex-row">
           <a  href="{{ item.link }}">{{item.name}}</a>
         </li>
         {% endfor %} {% else %} {% for item in site.data.navigation %}
-        <li class="navigation-menu-item">
+        <li class="navigation-menu-item flex-row">
           <a   href="{{ item.link }}"  {% if page.url == item.link %} class="active-url" {% else %} class = "unactive-url" {% endif %}>{{item.name}}</a>
         </li>
         {% endfor %} {% endif %}

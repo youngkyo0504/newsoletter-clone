@@ -20,12 +20,14 @@
 .navigation-menu-item {
   margin: 0 3em 0 0;
   font-size: 1.6rem;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
+  height: 4rem;
   letter-spacing: -0.67px;
   color: var(--newso-text-color-ivory);
+  @include normal-text;
+  transition: 0.3s;
+}
+.navigation-menu-item:hover {
+  box-shadow: inset 0 -2px 0 var(--newso-text-color-ivory);
 }
 
 .subscribe-btn {
@@ -37,6 +39,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+  transition: background-color 0.3s;
 }
 
 .subscribe-kakao-btn {
@@ -49,16 +52,22 @@
   font-style: normal;
   line-height: normal;
   margin-left: 1.2rem;
+  transition: background-color 0.3s;
+}
+.subscribe-btn:hover {
+  background-color: #f1af12;
 }
 
+.subscribe-kakao-btn:hover {
+  background-color: #ffe404;
+}
 .kakao-channel {
   width: 1.9rem;
   height: 1.9rem;
   margin-right: 2px;
 }
 
-.active-url {
-}
 .unactive-url {
   color: var(--newso-text-color-ivory-opa-40);
+  transition: 0.3s;
 }
