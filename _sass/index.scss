@@ -14,19 +14,31 @@
 //preface 부분
 .newso-description-preface {
   background-color: var(--newso-preface-background-color);
-  height: 41.5rem;
+  min-height: 41.5rem;
+  padding: 8rem 0 4rem 0;
   letter-spacing: -0.67px;
   color: var(--newso-line-color);
   @include spoca-han;
 
   @include normal-text;
 }
+.preface-logo {
+  width: 28rem;
+}
+.preface-introduction-icon {
+  width: 71px;
+  height: 71px;
+}
+
 .preface-introduction-icons {
   margin-top: 5em;
 }
 .preface-keywords,
 .preface-introduction {
   font-size: 1.6rem;
+}
+.preface-introduction {
+  width: 100%;
 }
 .preface-second-content {
   width: 50rem;
@@ -36,19 +48,20 @@
   font-size: 1.6rem;
   margin-top: 1.6rem;
 }
-.preface-first-content {
-  width: 28rem;
-}
+
 .preface-introduction-icon-container {
   margin-right: 4rem;
 }
 
 .preface-line {
+  width: 28rem;
   height: 1px;
   background-color: var(--newso-line-color);
   margin: 1.6rem 0;
 }
-
+.newso-description {
+  position: relative;
+}
 //description 부분
 //description 부분 색깔
 .newso-description:nth-child(1) {
@@ -74,7 +87,7 @@
 }
 .description-content-wrapper {
   max-width: 1052px;
-  padding: 0 16px 0 16px;
+  padding: 0 28px 0 28px;
   width: 100%;
   margin: 0 auto;
 }
@@ -98,6 +111,7 @@
   @include normal-text;
 }
 .description-name {
+  display: flex;
   font-size: 44px;
   letter-spacing: -1.83px;
   font-family: "Cafe24SsurroundAir";
@@ -108,6 +122,8 @@
 }
 .description-icon {
   margin-right: 1em;
+  width: 56px;
+  height: 56px;
 }
 
 .description-introduction {
@@ -160,16 +176,21 @@
   font-size: 2.2rem;
   @include cafe24;
 }
+.disease-support-name-container {
+  align-items: center;
+}
 
 .disease-icon-container:nth-child(2) {
   margin: 0 6.25em;
 }
+.disease-icon-container {
+  align-items: flex-start;
+}
 
 .disease-support-img {
   margin-top: 1em;
-}
-
-.disease-support-name {
+  width: 55px;
+  height: 55px;
 }
 
 //사양관리
@@ -184,6 +205,10 @@
 }
 
 //special
+
+.newso-description-appendix {
+  position: relative;
+}
 .description-special-logo {
   width: 17.9rem;
   height: 8.9rem;
@@ -198,9 +223,17 @@
 }
 
 //inducement부분
+
+.inducement-content {
+  width: 100%;
+}
+.inducement-description-text {
+  display: flex;
+  flex-wrap: wrap;
+}
 .subscription-inducement {
   //이건 지워야한다 마진 탑은
-  height: 20rem;
+  min-height: 20rem;
   background-color: var(--newso-main-color-green);
   color: var(--newso-text-color-ivory-subscription);
   font-family: "Spoqa Han Sans Neo", "Spoqa Han Sans JP", sans-serif;
@@ -247,4 +280,172 @@
 }
 .btn-latest-news:hover {
   border: solid 1px rgb(255, 255, 255);
+}
+
+@media screen and(max-width:67rem) {
+  .graph-img {
+    flex-direction: column;
+  }
+
+  .graph-img img {
+    margin-top: 1.2rem;
+  }
+
+  // 부록
+  .description-special-img {
+    display: none;
+  }
+
+  .description-special-logo {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 51.82rem) {
+  //preface
+
+  .preface-first-content {
+    width: 100%;
+  }
+  .preface-line {
+    order: 2;
+    width: 100%;
+  }
+  .preface-introduction-text {
+    margin-bottom: 16px;
+  }
+
+  .preface-keywords {
+    margin-top: 8px;
+    color: rgba(35, 30, 31, 0.6);
+  }
+  .newso-description-preface-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 42px;
+    // align-items: center;
+  }
+
+  .newso-description-preface {
+    padding: 48px 0 40px 0;
+  }
+  // 부록
+  .newso-description-appendix .description-content-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  // .description-content-wrapper {
+  //   display: block;
+  // }
+  // .description-name-container {
+  //   display: block;
+  // }
+  // .description-introduction {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
+  // .description-icon {
+  //   position: absolute;
+  //   top: 5%;
+  //   right: 10%;
+  // }
+
+  // .description-content-wrapper {
+  //   padding: 0 28px;
+  // }
+  // .description-icon {
+  //   order: 2;
+  // }
+  // .description-name {
+  //   order: 1;
+  //   flex-direction: column;
+  // }
+  // .description-introduction {
+  //   margin: 0;
+  //   align-items: flex-start;
+  //   justify-content: start;
+  //   flex-direction: column;
+  // }
+
+  // .description-name-container {
+  //   justify-content: space-between;
+  //   align-items: flex-start;
+  // }
+  .btn-list {
+    flex-direction: column;
+  }
+  .btn-latest-news {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  // 설명부분
+  .description-content-wrapper {
+    padding: 0 28px;
+  }
+  .description-icon {
+    order: 2;
+  }
+  .description-name {
+    font-size: 3.2rem;
+    order: 1;
+    flex-direction: column;
+  }
+  .description-introduction {
+    margin: 0;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .description-name-container {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  // 가축질병
+  .number-box {
+    display: none;
+  }
+  .disease-support-name {
+    order: 2;
+    margin-top: 1rem;
+  }
+  .disease-support-img {
+    order: 1;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 41.25rem) {
+  // 660px임
+  // subscription-inducement
+  .inducement-content {
+    flex-direction: column;
+    padding: 36px 0;
+  }
+  .inducement-text-container {
+    max-width: 39rem;
+    width: 100%;
+  }
+  .inducement-btn {
+    width: 100%;
+    margin: 1.6rem 0 0 0;
+    max-width: 39rem;
+  }
+
+  .inducement-description-text {
+    flex-direction: column;
+  }
+  .btn-list {
+    width: 100%;
+  }
+  .btn-list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

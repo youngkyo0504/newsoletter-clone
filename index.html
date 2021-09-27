@@ -13,7 +13,7 @@ custom_js:
 <main>
   <!-- 구독폼 -->
   <section class="subscription">
-    <div class="content-wrraper flex">
+    <div class="content-wrraper flex subscription-content">
       {% include subscription.html %}
       <div class="subscription-img">
         <img src="./assets/images/subscription/img-main@2x.png" alt="" />
@@ -23,36 +23,52 @@ custom_js:
 
   <!-- 소개글 서문 -->
   <section class="newso-description-preface flex-row">
-    <div class="content-wrraper flex-space-between">
+    <div
+      class="
+        content-wrraper
+        newso-description-preface-content
+        flex-space-between
+      "
+    >
       <div class="preface-first-content flex-col">
-        <img
-          class="preface-logo"
-          src="./assets/images/preface-newso-logo/img-newso-2.png"
-          alt="newso-logo"
-        />
+        <div class="preface-logo">
+          <img
+            class="preface-logo full-size-fit"
+            src="./assets/images/preface-newso-logo/img-newso-2@2x.png"
+            alt="newso-logo"
+          />
+        </div>
         <div class="preface-line"></div>
         <div class="preface-keywords">
-          축산업 분야의 새롭고 재미있는 뉴소레터를 매주 목요일날 만나보세요!
+          <div>축산업 분야의 새롭고 재미있는 뉴소레터를</div>
+          <div>매주 목요일날 만나보세요!</div>
         </div>
       </div>
       <div class="preface-second-content">
         <div class="preface-introduction">
-          <p>소 키우느라 바빠서 이것저것 찾아볼 시간도 없으시다구요?</p>
-          <p>
-            축산에 관심은 있는데, 말도 너무 어렵고 어디서 찾아봐야 할지도
-            모르시겠다구요?
-          </p>
-          <p>구독자님의 수고를 덜어 줄 쉽고 재미있는 한우 뉴스레터<뉴소레터></p>
-          <p>
-            한우 가격동향, 축산 뉴스, 보조금 및 정책, 사양관리 팁까지 한 번에
-            알려드려요.
-          </p>
+          <div class="preface-introduction-text">
+            <p>소 키우느라 바빠서 이것저것 찾아볼 시간도 없으시다구요?</p>
+            <p>
+              축산에 관심은 있는데, 말도 너무 어렵고 어디서 찾아봐야 할지도
+              모르시겠다구요?
+            </p>
+          </div>
+          <div>
+            <p>
+              구독자님의 수고를 덜어 줄 쉽고 재미있는 한우 뉴스레터<뉴소레터>
+            </p>
+            <p>
+              한우 가격동향, 축산 뉴스, 보조금 및 정책, 사양관리 팁까지 한 번에
+              알려드려요.
+            </p>
+          </div>
         </div>
         <ul class="preface-introduction-icons flex-row">
           <li class="preface-introduction-icon-container flex-col flex-center">
             <div class="preface-introduction-icon">
               <img
-                src="./assets/images/icon/description-icon/icon-bn-01.png"
+                class="full-size-fit"
+                src="./assets/images/icon/description-icon/icon-bn-01@2x.png"
                 alt=""
               />
             </div>
@@ -61,7 +77,8 @@ custom_js:
           <li class="preface-introduction-icon-container flex-col flex-center">
             <div class="preface-introduction-icon">
               <img
-                src="./assets/images/icon/description-icon/icon-bn-02.png"
+                class="full-size-fit"
+                src="./assets/images/icon/description-icon/icon-bn-02@2x.png"
                 alt=""
               />
             </div>
@@ -70,7 +87,8 @@ custom_js:
           <li class="preface-introduction-icon-container flex-col flex-center">
             <div class="preface-introduction-icon">
               <img
-                src="./assets/images/icon/description-icon/icon-bn-03.png"
+                class="full-size-fit"
+                src="./assets/images/icon/description-icon/icon-bn-03@2x.png"
                 alt=""
               />
             </div>
@@ -79,7 +97,8 @@ custom_js:
           <li class="preface-introduction-icon-container flex-col flex-center">
             <div class="preface-introduction-icon">
               <img
-                src="./assets/images/icon/description-icon/icon-bn-04.png"
+                class="full-size-fit"
+                src="./assets/images/icon/description-icon/icon-bn-04@2x.png"
                 alt=""
               />
             </div>
@@ -93,24 +112,25 @@ custom_js:
   <!-- 소개글 -->
   <div class="newso-description-container">
     <!-- 한우가격 동향 -->
-    <section class=" newso-description">
+    <section class="newso-description">
       <div class="description-content-wrapper flex-col justify-center">
         <div class="description-name-container flex-row flex-center">
           <div class="description-icon">
             <img
-              src="./assets/images/icon/description-icon/icon-bn-02.png"
+              class="full-size-fit"
+              src="./assets/images/icon/description-icon/icon-bn-01@2x.png"
               alt=""
             />
           </div>
           <div class="description-name">한우가격 동향</div>
         </div>
         <div class="description-introduction flex-center flex-row">
-          월간 우시장에서의 송아지 가격과 현재 송아지 가격, 도체 가격의 동향을
-          알려드려요.
+          <div>월간 우시장에서의 송아지 가격과</div>
+          <div>현재 송아지 가격, 도체 가격의 동향을 알려드려요.</div>
         </div>
         <div class="description-line"></div>
         <div class="">
-          <div class="flex-row flex-space-between">
+          <div class="flex-row flex-space-between graph-img">
             <img src="./assets/images/graph/img-graph-01.png" alt="" />
             <img src="./assets/images/graph/img-graph-02.png" alt="" />
           </div>
@@ -129,12 +149,13 @@ custom_js:
     </section>
 
     <!-- 핫이슈탐구 -->
-    <section class=" newso-description">
+    <section class="newso-description">
       <div class="description-content-wrapper flex-col justify-center">
         <div class="description-name-container flex-row flex-center">
           <div class="description-icon">
             <img
-              src="./assets/images/icon/description-icon/icon-bn-01.png"
+              class="full-size-fit"
+              src="./assets/images/icon/description-icon/icon-bn-02@2x.png"
               alt=""
             />
           </div>
@@ -174,55 +195,70 @@ custom_js:
     </section>
 
     <!-- 가축 질병발생 현황 지원사업  -->
-    <section class=" newso-description">
+    <section class="newso-description">
       <div class="description-content-wrapper flex-col justify-center">
         <div class="description-name-container flex-row flex-center">
           <div class="description-icon">
             <img
-              src="./assets/images/icon/description-icon/icon-bn-01.png"
+              class="full-size-fit"
+              src="./assets/images/icon/description-icon/icon-bn-03@2x.png"
               alt=""
             />
           </div>
-          <div class="description-name">가축질병발생현황 & 지원사업</div>
+          <div class="description-name">
+            <div>가축질병발생현황</div>
+            <div>& 지원사업</div>
+          </div>
         </div>
         <div class="description-introduction flex-center flex-row">
-          지난달과 이번달 가축질병 발생현황과 보조금 정보,지원사업 등 혜택을
-          알려드려요.
+          <div>지난달과 이번달 가축질병 발생현황과</div>
+          <div>보조금 정보,지원사업 등 혜택을 알려드려요.</div>
         </div>
         <div class="description-line"></div>
         <ul class="description-disease-icons flex-row justify-center">
-          <div class="disease-icon-container">
-            <div class="disease-support-name-container flex-row">
-              <div class="number-box flex-row justify-center">
-                <span>1</span>
-              </div>
-
+          <div class="disease-icon-container flex-row">
+            <div class="number-box flex-row justify-center">
+              <span>1</span>
+            </div>
+            <div class="disease-support-name-container flex-col">
               <div class="disease-support-name">질병발생현황</div>
-            </div>
-            <div class="disease-support-img flex-row justify-center">
-              <img src="./assets/images/disease-symbol/img-301.png" alt="" />
+              <div class="disease-support-img flex-row justify-center">
+                <img
+                  class="full-size-fit"
+                  src="./assets/images/disease-symbol/img-301@2x.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div class="disease-icon-container flex-col justify-center">
-            <div class="disease-support-name-container flex-row">
-              <div class="number-box flex-row justify-center">
-                <span>2</span>
-              </div>
+          <div class="disease-icon-container flex-row justify-center">
+            <div class="number-box flex-row justify-center">
+              <span>2</span>
+            </div>
+            <div class="disease-support-name-container flex-col">
               <div class="disease-support-name">보조금 정보</div>
-            </div>
-            <div class="disease-support-img flex-row justify-center">
-              <img src="./assets/images/disease-symbol/img-302.png" alt="" />
+              <div class="disease-support-img flex-row justify-center">
+                <img
+                  class="full-size-fit"
+                  src="./assets/images/disease-symbol/img-302@2x.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div class="disease-icon-container">
-            <div class="disease-support-name-container flex-row">
-              <div class="number-box flex-row justify-center">
-                <span>3</span>
-              </div>
-              <div class="disease-support-name">지원사업</div>
+          <div class="disease-icon-container flex-row justify-center">
+            <div class="number-box flex-row justify-center">
+              <span>3</span>
             </div>
-            <div class="disease-support-img flex-row justify-center">
-              <img src="./assets/images/disease-symbol/img-303.png" alt="" />
+            <div class="disease-support-name-container flex-col">
+              <div class="disease-support-name">지원사업</div>
+              <div class="disease-support-img flex-row justify-center">
+                <img
+                  class="full-size-fit"
+                  src="./assets/images/disease-symbol/img-303@2x.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </ul>
@@ -230,19 +266,21 @@ custom_js:
     </section>
 
     <!-- 사양관리 인사이트  -->
-    <section class=" newso-description">
+    <section class="newso-description">
       <div class="description-content-wrapper flex-col justify-center">
         <div class="description-name-container flex-row flex-center">
           <div class="description-icon">
             <img
-              src="./assets/images/icon/description-icon/icon-bn-01.png"
+              class="full-size-fit"
+              src="./assets/images/icon/description-icon/icon-bn-04@2x.png"
               alt=""
             />
           </div>
           <div class="description-name">사양관리 인사이트</div>
         </div>
         <div class="description-introduction flex-center flex-row">
-          축산 관련 이슈들을 더 깊게 다루거나, 사양관리 꿀팁 등을 제공해요.
+          <div>축산 관련 이슈들을 더 깊게 다루거나,</div>
+          <div>사양관리 꿀팁 등을 제공해요.</div>
         </div>
         <div class="description-line"></div>
         <div class="flex-row justify-center">
@@ -278,12 +316,12 @@ custom_js:
           />
         </div>
         <div class="description-special-text flex-col">
-
           <div class="description-name-container flex-row flex-center">
             <div class="description-name">부록</div>
           </div>
           <div class="description-introduction flex-center flex-row">
-            뉴소레터 에디터가 가끔 재미있는 주제를 들고 찾아와요.
+            <div>뉴스레터 에디터가</div>
+            <div>가끔 재미있는 주제를 들고 찾아와요</div>
           </div>
         </div>
         <div class="description-special-img">
@@ -299,35 +337,39 @@ custom_js:
 
   <!-- 구독유도 -->
   <section class="subscription-inducement flex-row">
-    <div class="content-wrraper flex-row flex-space-between">
-      <div>
-        <div>
-          <strong class="inducement-strong"> 아직도 망설이고 계신가요? </strong>
+    <div class="content-wrraper">
+      <div class="flex-row flex-space-between inducement-content">
+        <div class="inducement-text-container">
+          <div>
+            <strong class="inducement-strong">
+              아직도 망설이고 계신가요?
+            </strong>
+          </div>
+          <div class="inducement-description">
+            <div class="inducement-description-text">
+              <p>데이터로 만드는 단단한 축산,</p>
+              <p>앤틀러에서 제공하는 뉴소레터를 만나보세요!</p>
+            </div>
+            <div class="inducement-description-text">
+              <p>앤틀러는 다음 세대를 위한 축산을 위해 매순간 새로운</p>
+              <p>인사이트를 찾고 연구를 통해 용감하게 시도합니다.</p>
+            </div>
+          </div>
         </div>
-        <div class="inducement-description">
-          <p>
-            데이터로 만드는 단단한 축산, 앤틀러에서 제공하는 뉴소레터를
-            만나보세요!
-          </p>
-          <p>
-            앤틀러는 다음 세대를 위한 축산을 위해 매순간 새로운 인사이트를 찾고
-          </p>
-          <p>연구를 통해 용감하게 시도합니다.</p>
-        </div>
-      </div>
 
-      <ul class="btn-list flex-row">
-        <li>
-          <button class="inducement-btn btn-latest-news">
-            지난 뉴소레터 보기
-          </button>
-        </li>
-        <li>
-          <button class="js-subscribe-btn inducement-btn btn-subscribe">
-            뉴소레터 구독하기
-          </button>
-        </li>
-      </ul>
+        <ul class="btn-list flex-row">
+          <li>
+            <button class="inducement-btn btn-latest-news">
+              지난 뉴소레터 보기
+            </button>
+          </li>
+          <li>
+            <button class="js-subscribe-btn inducement-btn btn-subscribe">
+              뉴소레터 구독하기
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
