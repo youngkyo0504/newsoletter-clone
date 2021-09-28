@@ -1,17 +1,20 @@
 .newso-footer {
-  @include spoca-han;
-  height: 12.2rem;
+  min-height: 12.2rem;
   font-size: 1.2rem;
   background-color: var(--newso-footer-background-color);
-
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
 
+  @include spoca-han;
+  @include normal-text;
+}
+.contact-text-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .contact-us {
   font-weight: bold;
   letter-spacing: -0.14px;
+  margin-right: 6px;
 }
 
 .address {
@@ -33,7 +36,7 @@
 .icon-container {
   height: 2.8rem;
   width: 2.8rem;
-  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 .icon {
   transition: 0.3s;
@@ -71,6 +74,38 @@
   background-image: url(../images/icon/kakao/bn-kakao@2x.png);
 }
 
-@media screen and (max-width: 36.25) {
-  // footer
+//mobile
+@media screen and (max-width: 36.25rem) {
+  .contact-text-container {
+    flex-direction: column;
+  }
+
+  .contact-address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon-list {
+    margin-top: 2.4rem;
+  }
+
+  .contact-us {
+    margin-bottom: 0.2rem;
+  }
+
+  .address {
+    flex-direction: column;
+  }
+
+  .newso-footer {
+    padding: 2.6rem 0 2.4rem 0;
+  }
+
+  .copyright-wrraper {
+    margin-top: 12px;
+  }
+
+  .icon-container {
+    margin-right: 1.2rem;
+  }
 }

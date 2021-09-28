@@ -2,7 +2,6 @@
   padding-top: 207px;
 }
 .page-error-jonnie {
-  background-image: url(../images/jonnie/img-404@2x.png);
   width: 319px;
   height: 319px;
   background-size: contain;
@@ -25,4 +24,12 @@
   letter-spacing: -1.67px;
   font-size: 4rem;
   margin: 1em 0;
+}
+@media screen and(max-width:23.5rem) {
+  .page-error {
+    padding-top: 108px;
+  }
+  .page-error-jonnie {
+    width: 90%;
+  }
 }

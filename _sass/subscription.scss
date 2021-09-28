@@ -93,8 +93,8 @@
 
   .mo-subscription-img {
     display: block;
-    height: 432px;
-    width: 331px;
+    max-height: 432px;
+    max-width: 331px;
     margin: auto;
   }
   .stb_form_submit_button {
@@ -102,5 +102,32 @@
   }
   .subscription-img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 34.375rem) {
+  .stb_form_title_description {
+    font-size: 2.1rem;
+  }
+
+  .stb_form_title {
+    font-size: 6rem;
+  }
+
+  .stb_form_set_label {
+    font-size: 1.4rem;
+  }
+
+  .subscription {
+    padding: 99px 0 56px 0;
+  }
+
+  .stb_form_policy {
+    font-size: 1.5rem;
+  }
+  .subscription-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -1,11 +1,11 @@
 .nav-wrraper {
-  height: 8.7rem;
+  max-height: 8.7rem;
   font-size: 1.6rem;
   background-color: var(--newso-main-color-green);
   border-bottom: #1d1d1b solid 2px;
 }
 .navbar {
-  margin: 1.95rem auto 1.95rem;
+  padding: 1.95rem 2rem 1.95rem 2rem;
 }
 
 .newso-logo {
@@ -90,5 +90,14 @@
 @media screen and (max-width: 50rem) {
   .nav-wrraper {
     font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 34.375rem) {
+  .navbar {
+    height: 5rem;
+  }
+  .newso-logo {
+    width: 63px;
+    height: 25px;
   }
 }

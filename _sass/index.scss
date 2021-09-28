@@ -12,6 +12,11 @@
 }
 
 //preface 부분
+.preface-second-content {
+}
+.preface-introduction {
+}
+
 .newso-description-preface {
   background-color: var(--newso-preface-background-color);
   min-height: 41.5rem;
@@ -32,6 +37,8 @@
 
 .preface-introduction-icons {
   margin-top: 5em;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .preface-keywords,
 .preface-introduction {
@@ -41,7 +48,7 @@
   width: 100%;
 }
 .preface-second-content {
-  width: 50rem;
+  // width: 100%;
 }
 .preface-introduction-icon-name {
   font-weight: bold;
@@ -84,6 +91,10 @@
   margin-bottom: 7.5em;
   margin-top: 7.5em;
   margin: 7.5em 1em;
+}
+
+.jonnie-talk {
+  flex-wrap: wrap;
 }
 .description-content-wrapper {
   max-width: 1052px;
@@ -128,6 +139,12 @@
 
 .description-introduction {
   margin-top: 0.9em;
+  flex-wrap: wrap;
+}
+
+//가격동향
+.graph-img-container {
+  width: 49rem;
 }
 
 //description issue
@@ -144,7 +161,10 @@
   line-height: 2.06;
   letter-spacing: -0.75px;
   font-size: 1.8rem;
-  list-style: disc inside none;
+}
+
+.description-issue-li::before {
+  content: "•";
 }
 
 .issue-img {
@@ -290,23 +310,10 @@
   .graph-img img {
     margin-top: 1.2rem;
   }
-
-  // 부록
-  .description-special-img {
-    display: none;
-  }
-
-  .description-special-logo {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-  }
 }
 
 @media screen and (max-width: 51.82rem) {
-  //preface
-
-  .preface-first-content {
+  preface .preface-first-content {
     width: 100%;
   }
   .preface-line {
@@ -332,47 +339,9 @@
     padding: 48px 0 40px 0;
   }
   // 부록
-  .newso-description-appendix .description-content-wrapper {
-    align-items: flex-start;
-    justify-content: flex-start;
+  .description-special-text {
+    margin: 0;
   }
-  // .description-content-wrapper {
-  //   display: block;
-  // }
-  // .description-name-container {
-  //   display: block;
-  // }
-  // .description-introduction {
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-  // .description-icon {
-  //   position: absolute;
-  //   top: 5%;
-  //   right: 10%;
-  // }
-
-  // .description-content-wrapper {
-  //   padding: 0 28px;
-  // }
-  // .description-icon {
-  //   order: 2;
-  // }
-  // .description-name {
-  //   order: 1;
-  //   flex-direction: column;
-  // }
-  // .description-introduction {
-  //   margin: 0;
-  //   align-items: flex-start;
-  //   justify-content: start;
-  //   flex-direction: column;
-  // }
-
-  // .description-name-container {
-  //   justify-content: space-between;
-  //   align-items: flex-start;
-  // }
   .btn-list {
     flex-direction: column;
   }
@@ -401,13 +370,22 @@
     flex-direction: column;
   }
 
-  .description-name-container {
+  .newso-description:nth-child(3) .description-name-container {
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .description-name-container {
+    justify-content: space-between;
   }
   // 가축질병
   .number-box {
     display: none;
+  }
+  .disease-icon-container:nth-child(2) {
+    margin: 0;
+  }
+  .description-disease-icons {
+    justify-content: space-between;
   }
   .disease-support-name {
     order: 2;
@@ -447,5 +425,193 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  // 부록
+  .newso-description-appendix .description-content-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .description-special-img {
+    display: none;
+  }
+  .description-special-logo {
+    position: absolute;
+    top: 15%;
+    right: 7%;
+  }
+}
+@media screen and (max-width: 34.375rem) {
+  .subscription {
+    padding-top: 9.9rem;
+  }
+  //preface
+  .preface-logo {
+    width: 226px;
+    height: 77px;
+  }
+  .preface-keywords {
+    font-size: 1.4rem;
+  }
+  .preface-introduction-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .preface-introduction-icon-name {
+    font-size: 1.2rem;
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+  .preface-introduction-icon-container {
+    margin-right: 0;
+  }
+
+  .preface-introduction-icons {
+    justify-content: space-around;
+  }
+
+  //description
+
+  .newso-description {
+    margin-top: 4rem;
+    padding: 3.2rem 0 2.8rem 0;
+  }
+  .description-line {
+    margin: 1.6rem 0 2rem 0;
+  }
+  .issue-img {
+    margin-right: 0;
+  }
+  .newso-description-container {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    margin-bottom: 5.2rem;
+  }
+  .newso-description {
+    font-size: 1.4rem;
+  }
+
+  .description-name {
+    font-size: 2.4rem;
+  }
+
+  .graph-img-container {
+    width: 100%;
+  }
+
+  .description-icon {
+    margin-right: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  //핫이슈 탐구
+  .newso-description:nth-child(2) {
+    min-height: 41.5rem;
+  }
+  .description-issue-li {
+    font-size: 1.4rem;
+  }
+
+  .description-text-issue {
+    font-size: 1.5rem;
+  }
+  .issue-img {
+    width: 85px;
+    height: 140px;
+    position: absolute;
+    bottom: 7%;
+    right: 8%;
+  }
+
+  .description-issue-li {
+    position: relative;
+    span {
+      position: relative;
+      left: 0;
+    }
+  }
+  .jonnie-talk {
+    flex-direction: column;
+    line-height: 1.8;
+  }
+
+  //질병
+  .disease-support-img {
+    width: 54px;
+    height: 42px;
+  }
+  .disease-support-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .newso-description:nth-child(3) .description-introduction {
+    margin-top: 4px;
+  }
+
+  //inducement
+  .inducement-strong {
+    font-size: 2.4rem;
+  }
+
+  .inducement-btn {
+    font-size: 1.6rem;
+  }
+  .inducement-description {
+    margin-top: 0.8rem;
+    margin-bottom: 3.2rem;
+  }
+  .btn-list li {
+    margin: 0;
+  }
+  .inducement-btn {
+    margin: 0;
+  }
+  .btn-list li:nth-child(1) {
+    margin-bottom: 1.6rem;
+  }
+  .subscription-inducement {
+    margin: 0;
+  }
+  //insight
+  .insight-img {
+    position: absolute;
+    bottom: 7%;
+    right: 8%;
+    width: 113px;
+    height: 140px;
+  }
+  .newso-description:nth-child(4) {
+    min-height: 41.7rem;
+  }
+  .list-description {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  //special
+  .description-special-logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 22.68rem) {
+  .issue-img {
+    width: 50px;
+    height: 80px;
+  }
+
+  .insight-img {
+    width: 60px;
+    height: 73.8px;
+  }
+
+  .newso-description-preface-content {
+    padding: 0;
+  }
+
+  .content-wrraper {
+    padding: 0 1.2rem;
   }
 }
