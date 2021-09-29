@@ -1,3 +1,7 @@
+.overlay-subscribe {
+  @include fiexed-full;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .modal-subscribe {
   background-color: var(--newso-modal-background-color);
   width: 47.4rem;

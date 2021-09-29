@@ -1,0 +1,125 @@
+$nav-text: #fff8e6;
+.mo-menu-overlay {
+  background-color: var(--newso-main-color-green);
+  position: relative;
+  letter-spacing: -0.58px;
+  @include fiexed-full;
+  @include normal-text;
+  @include spoca-han;
+  overflow: auto;
+  color: var(--newso-mo-nav-text-color);
+}
+.mo-modal-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 2rem;
+}
+.mo-menu-modal-exit {
+  width: 20px;
+  height: 20px;
+}
+
+.mo-menu-close-btn-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.mo-nav {
+  padding: 8rem 5.6rem;
+}
+
+.mo-menu-items li {
+  font-size: 3.2rem;
+}
+
+.mo-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+}
+
+.mo-menu-line {
+  height: 1px;
+  background-color: var(--newso-mo-nav-text-color);
+  margin: 9.1rem 0 2.4rem 0;
+}
+
+.mo-menu-logo {
+  width: 165.6px;
+  height: 19.2px;
+}
+
+.mo-menu-text {
+  font-size: 1.7rem;
+}
+
+.nav-mo-menu-btn {
+  font-size: 2.4rem;
+  width: 100%;
+  justify-content: center;
+  padding: 1.6rem 0;
+  height: 68px;
+}
+
+.mo-menu-logo-text {
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2.4rem;
+}
+
+.mo-menu-subscribe-btn .nav-mo-menu-btn {
+  background-color: var(--newso-mo-nav-text-color);
+  border-radius: 30px;
+  color: var(--newso-main-color-green);
+}
+.mo-menu-subscribe-btn .mo-menu-btn-img {
+  width: 36px;
+  height: 36px;
+}
+
+.mo-menu-kakao-btn .nav-mo-menu-btn {
+  background-color: #ffe404;
+  border-radius: 30px;
+  color: var(--newso-kakao-text-color);
+}
+.mo-menu-kakao-btn .mo-menu-btn-img {
+  width: 28px;
+  height: 28px;
+}
+.mo-menu-btn-list {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 34.375rem) {
+  .mo-modal-wrapper {
+    padding: 1.6rem 2rem;
+  }
+
+  .mo-menu-items li {
+    font-size: 2.6rem;
+  }
+
+  .mo-menu-logo {
+    width: 138px;
+    height: 16px;
+  }
+
+  .nav-mo-menu-btn {
+    font-size: 2.2rem;
+  }
+
+  .mo-menu-text {
+    font-size: 1.4rem;
+  }
+
+  .mo-nav {
+    padding: 6.4rem 2rem;
+  }
+  .nav-mo-menu-btn {
+    height: 56px;
+  }
+}

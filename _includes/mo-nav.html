@@ -1,0 +1,67 @@
+<div hidden class="mo-menu-overlay">
+  <div class="mo-modal-wrapper">
+    <div class="mo-menu-close-btn-wrapper">
+      <button class="mo-menu-modal-exit">
+        <img
+          class="full-size-fit"
+          src="../assets/images/close-button/mo-btn-close@2x.png"
+          alt="close-btn"
+        />
+      </button>
+    </div>
+
+    <nav class="mo-nav">
+      <div class="mo-menu-items">
+        <ul class="mo-menu-items">
+          {% for item in site.data.navigation %}
+          <li class="flex-row">
+            <a href="{{ item.link }}">{{item.name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="mo-menu-line"></div>
+      <div class="mo-menu-logo-text flex-col">
+        <div class="mo-menu-logo">
+          <img
+            class="full-size-fit"
+            src="../assets/images/logo-text/mo-logo-menu@2x.png"
+            alt=""
+          />
+        </div>
+        <div class="mo-menu-text">뉴소레터를 만나는 법</div>
+      </div>
+      <ul class="mo-menu-btn-list flex-col">
+        <li class="mo-menu-subscribe-btn">
+          <button class="nav-mo-menu-btn flex-row">
+            <div class="flex">
+              <div class="mo-menu-btn-img">
+                <img
+                  class="full-size-fit"
+                  src="../assets/images/icon/mo-logo/mo-img-face@2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-row justify-center">&nbsp구독하기</div>
+            </div>
+          </button>
+        </li>
+        <li class="mo-menu-kakao-btn">
+          <button class="nav-mo-menu-btn flex-row">
+            <div class="flex">
+              <div class="mo-menu-btn-img">
+                <img
+                  class="full-size-fit"
+                  src="../assets/images/icon/mo-logo/mo-img-kakao@2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-row justify-center">&nbsp채널추가</div>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

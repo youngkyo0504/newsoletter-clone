@@ -10,7 +10,7 @@
 }
 
 .homepage-btn {
-  width: 323px;
+  max-width: 323px;
   letter-spacing: -1px;
   padding: 19px 60px;
   border-radius: 8px;
@@ -25,11 +25,38 @@
   font-size: 4rem;
   margin: 1em 0;
 }
-@media screen and(max-width:23.5rem) {
+@media screen and(max-width:26.25rem) {
+  .page-error .content-wrraper {
+    padding: 0 4rem;
+  }
   .page-error {
-    padding-top: 108px;
+    padding-top: 10.8rem;
+    padding-bottom: 8rem;
   }
   .page-error-jonnie {
-    width: 90%;
+    width: 65%;
+    height: 65%;
+  }
+
+  .page-error-text {
+    font-size: 2.4rem;
+  }
+
+  .homepage-btn {
+    font-size: 2.2rem;
+    padding: 1.6rem 5.4rem;
+  }
+}
+
+@media screen and(max-width:22.68rem) {
+  .page-error .content-wrraper {
+    padding: 0 1.2rem;
+  }
+  .page-error-text {
+    font-size: 2.2rem;
+  }
+
+  .homepage-btn {
+    font-size: 1.6rem;
   }
 }

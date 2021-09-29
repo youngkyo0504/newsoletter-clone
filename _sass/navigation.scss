@@ -71,7 +71,8 @@
   color: var(--newso-text-color-ivory-opa-40);
   transition: 0.3s;
 }
-.mo-logo {
+.mo-menu-btn {
+  cursor: pointer;
   display: none;
   width: 20px;
   height: 20px;
@@ -82,7 +83,7 @@
     display: none;
   }
 
-  .mo-logo {
+  .mo-menu-btn {
     display: block;
   }
 }
