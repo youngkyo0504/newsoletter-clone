@@ -9,7 +9,11 @@
         />
       </button>
       <!-- 구독폼// -->
-      <form class="modal-subscribe-form" action="" name="subscribe-form">
+      <form
+        class="modal-subscribe-form js-subscribe-form"
+        action=""
+        name="subscribe-form"
+      >
         <!-- logo image -->
         <div class="modal-newso-logo-container flex-col flex-center">
           <div class="modal-newso-symbol">
@@ -35,7 +39,7 @@
           </label>
           <input
             type="email"
-            class="subscribe-form-input"
+            class="subscribe-form-input js-email-input"
             name="email"
             required="required"
           />
@@ -47,7 +51,7 @@
 
           <input
             type="text"
-            class="subscribe-form-input"
+            class="subscribe-form-input js-name-input"
             name="name"
             required="required"
           />
@@ -57,7 +61,12 @@
         <!-- 개인정보 정책 / -->
         <div class="stb-form-policy">
           <label>
-            <input type="checkbox" id="stb_policy" value="stb_policy_true" />
+            <input
+              class="js-policy-input"
+              type="checkbox"
+              id="stb_policy"
+              value="stb_policy_true"
+            />
             <button
               data-modal="stb_form_policy_modal"
               class="subscribe-form-policy-open-btn"
@@ -94,7 +103,9 @@
           </div> -->
         </div>
         <fieldset class="subscribe-form-set-submit">
-          <button class="modal-subscribe-button" type="submit">구독하기</button>
+          <button class="modal-subscribe-button js-submit-btn" type="submit">
+            구독하기
+          </button>
         </fieldset>
       </form>
     </div>

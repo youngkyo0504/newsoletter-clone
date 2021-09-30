@@ -13,7 +13,7 @@ custom_js:
 <section class="newso-subscription-page-subscribe">
   <!-- 구독폼// -->
   <form
-    class="newso-subscription-page-subscribe-form"
+    class="newso-subscription-page-subscribe-form js-subscribe-form"
     action=""
     name="subscribe-form"
   >
@@ -42,7 +42,7 @@ custom_js:
       <label for="stb_email" class="subscribe-form-label"> 이메일 주소 </label>
       <input
         type="email"
-        class="subscribe-form-input"
+        class="subscribe-form-input js-email-input"
         name="email"
         required="required"
       />
@@ -54,7 +54,7 @@ custom_js:
 
       <input
         type="text"
-        class="subscribe-form-input"
+        class="subscribe-form-input js-name-input"
         name="name"
         required="required"
       />
@@ -64,7 +64,12 @@ custom_js:
     <!-- 개인정보 정책 / -->
     <div class="stb-form-policy">
       <label>
-        <input type="checkbox" id="stb_policy" value="stb_policy_true" />
+        <input
+          type="checkbox"
+          class="js-policy-input"
+          id="stb_policy"
+          value="stb_policy_true"
+        />
         <button
           data-newso-subscription-page="stb_form_policy_modal"
           class="subscribe-form-policy-open-btn"
@@ -101,7 +106,10 @@ custom_js:
           </div> -->
     </div>
     <fieldset class="subscribe-form-set-submit">
-      <button class="newso-subscription-page-subscribe-button" type="submit">
+      <button
+        class="newso-subscription-page-subscribe-button js-submit-btn"
+        type="submit"
+      >
         구독하기
       </button>
     </fieldset>

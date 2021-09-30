@@ -1,8 +1,8 @@
 <div class="stb_subscribe">
     
-    <form action="https://stibee.com/api/v1.0/lists/ExT9KYHNgf-zegwdgPJ9IyZDV28lqg==/public/subscribers" method="POST"
-        target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form"
-        novalidate="">
+    <form  
+         accept-charset="utf-8" class="stb_form js-subscribe-form" name="stb_subscribe_form" id="stb_subscribe_form"
+        >
         <div class="subscription-head">
             <span class="stb_form_title_description">세상 바쁜 당신을 위한 </span>
             <h1 class="stb_form_title">뉴소레터</h1>
@@ -21,16 +21,16 @@
                 <label for="stb_email" class="stb_form_set_label">
                     이메일 주소
                 </label>
-                <input type="email" class="stb_form_set_input"  name="email" required="required">
+                <input type="email" class="stb_form_set_input js-email-input"  name="email" required="required">
 
                 <div class="stb_form_msg_error" ></div>
             </fieldset>
             <fieldset class="flex-col stb_form_set">
-                <label for="stb_name" class="stb_form_set_label">
+                <label for="stb_name" class="stb_form_set_label ">
                     이름
                 </label>
 
-                <input type="text" class="stb_form_set_input"  name="name">
+                <input type="text" class="stb_form_set_input js-name-input"  name="name">
                 <div class="stb_form_msg_error" ></div>
             </fieldset>
 
@@ -38,7 +38,7 @@
 
             <div class="stb_form_policy">
                 <label>
-                    <input type="checkbox"  value="stb_policy_true">
+                    <input type="checkbox" class="js-policy-input" value="stb_policy_true">
                     <button id="stb_form_modal_open" data-modal="stb_form_policy_modal" class="stb_form_modal_open_btn"
                         type="button">개인정보 수집 및 이용</button>에 동의합니다.
                 </label>
@@ -65,9 +65,7 @@
             </div>
 
             <fieldset class="stb_form_set_submit">
-                <button type="submit" class="stb_form_submit_button"  style=" letter-spacing: -1px;
-        color: var(--newso-text-color-ivory-subscription);
-        background-color: var(--newso-main-color-green);">구독하기</button>
+                <button type="submit" class="stb_form_submit_button js-submit-btn">구독하기</button>
             </fieldset>
         </div>
     </form>
