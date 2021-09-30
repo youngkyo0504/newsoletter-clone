@@ -27,3 +27,5 @@ function makeCloseBtn(btnCloseClassName, componentName){
 
 
 makeCloseBtn(".mo-menu-modal-exit",".mo-menu-overlay")
+
+

@@ -1,0 +1,109 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: 뉴소레터
+custom_css:
+  - newso-subscription
+custom_js:
+  - subscribe
+---
+
+<section class="newso-subscription-page-subscribe">
+  <!-- 구독폼// -->
+  <form
+    class="newso-subscription-page-subscribe-form"
+    action=""
+    name="subscribe-form"
+  >
+    <!-- logo image -->
+    <div
+      class="newso-subscription-page-newso-logo-container flex-col flex-center"
+    >
+      <div class="newso-subscription-page-newso-symbol">
+        <img
+          class="full-size-fit"
+          src="../assets/images/image-symbol/img-symbol@2x.png"
+          alt=""
+        />
+      </div>
+      <div class="newso-subscription-page-newso-logo">
+        <img
+          class="full-size-fit"
+          src="../assets/images/logo-newso-center/logo-newso-center@2x.png"
+          alt=""
+        />
+      </div>
+      <p>매주 목요일, 한우에 관련된 재미있는 소식을 만나보세요.</p>
+    </div>
+    <!-- inputs -->
+    <fieldset class="flex-col subscribe-input-container">
+      <label for="stb_email" class="subscribe-form-label"> 이메일 주소 </label>
+      <input
+        type="email"
+        class="subscribe-form-input"
+        name="email"
+        required="required"
+      />
+      <div class="subscribe-form-msg-error"></div>
+    </fieldset>
+
+    <fieldset class="flex-col subscribe-input-container">
+      <label for="stb_name" class="subscribe-form-label"> 이름 </label>
+
+      <input
+        type="text"
+        class="subscribe-form-input"
+        name="name"
+        required="required"
+      />
+      <div class="subscribe-form-msg-error"></div>
+    </fieldset>
+
+    <!-- 개인정보 정책 / -->
+    <div class="stb-form-policy">
+      <label>
+        <input type="checkbox" id="stb_policy" value="stb_policy_true" />
+        <button
+          data-newso-subscription-page="stb_form_policy_modal"
+          class="subscribe-form-policy-open-btn"
+          type="button"
+        >
+          개인정보 수집 및 이용</button
+        >에 동의합니다.
+      </label>
+      <div class="subscribe-form-msg-error" id="stb_policy_error"></div>
+
+      <!-- 개인정보모달창 -->
+      <!-- <div
+            class="stb_form_newso-subscription-page stb_form_policy_text blind"
+            id="stb_form_policy_newso-subscription-page"
+          >
+            <div class="stb_form_newso-subscription-page_body">
+              <h1 class="stb_form_newso-subscription-page_title">개인정보 수집 및 이용</h1>
+              <p class="stb_form_newso-subscription-page_text">
+                뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다.
+                수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가
+                종료되거나 구독을 해지할 경우 즉시 파기됩니다.
+              </p>
+              <div class="stb_form_newso-subscription-page_btn">
+                <button
+                  id="stb_form_newso-subscription-page_close"
+                  class="stb_form_newso-subscription-page_close_btn"
+                  data-newso-subscription-page="stb_form_policy_modal"
+                  type="button"
+                >
+                  닫기
+                </button>
+              </div>
+            </div>
+          </div> -->
+    </div>
+    <fieldset class="subscribe-form-set-submit">
+      <button class="newso-subscription-page-subscribe-button" type="submit">
+        구독하기
+      </button>
+    </fieldset>
+  </form>
+</section>
