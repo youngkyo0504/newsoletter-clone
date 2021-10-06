@@ -1,3 +1,4 @@
+@import "mixin";
 .newso-footer {
   min-height: 12.2rem;
   font-size: 1.2rem;
@@ -75,7 +76,7 @@
 }
 
 //mobile
-@media screen and (max-width: 36.25rem) {
+@media screen and (max-width: 580px) {
   .contact-text-container {
     flex-direction: column;
   }

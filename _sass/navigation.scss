@@ -1,3 +1,4 @@
+@import "mixin";
 .nav-wrraper {
   max-height: 8.7rem;
   font-size: 1.6rem;
@@ -78,22 +79,23 @@
   height: 20px;
 }
 
-@media screen and (max-width: 43.75rem) {
+@media screen and (max-width: 700px) {
   .desktop-nav {
     display: none;
   }
-
+  //700px 43.75rem
   .mo-menu-btn {
     display: block;
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
   .nav-wrraper {
     font-size: 1.3rem;
   }
+  // 원래 50rem
 }
-@media screen and (max-width: 34.375rem) {
+@media screen and (max-width: 550px) {
   .navbar {
     height: 5rem;
   }

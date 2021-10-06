@@ -1,3 +1,4 @@
+@import "mixin";
 .page-error {
   padding-top: 207px;
 }
@@ -25,7 +26,8 @@
   font-size: 4rem;
   margin: 1em 0;
 }
-@media screen and(max-width:26.25rem) {
+
+@media screen and(max-width:420px) {
   .page-error .content-wrraper {
     padding: 0 4rem;
   }
@@ -48,7 +50,7 @@
   }
 }
 
-@media screen and(max-width:22.68rem) {
+@media screen and(max-width:362.88px) {
   .page-error .content-wrraper {
     padding: 0 1.2rem;
   }

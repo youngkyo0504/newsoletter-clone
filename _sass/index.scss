@@ -1,3 +1,4 @@
+@import "mixin";
 .subscription {
   background-color: var(--newso-background-color-ivory-opacity-90);
   padding: 15.8rem 0 7rem 0;
@@ -302,7 +303,7 @@
   border: solid 1px rgb(255, 255, 255);
 }
 
-@media screen and(max-width:67rem) {
+@media screen and(max-width:1072px) {
   .graph-img {
     flex-direction: column;
   }
@@ -312,10 +313,11 @@
   }
 }
 
-@media screen and (max-width: 51.82rem) {
+@media screen and (max-width: 829.12px) {
   preface .preface-first-content {
     width: 100%;
   }
+  //51.82
   .preface-line {
     order: 2;
     width: 100%;
@@ -350,8 +352,8 @@
   }
 }
 
-@media screen and (max-width: 43.75rem) {
-  // 설명부분
+@media screen and (max-width: 700px) {
+  // 설명부분 43.75
   .description-content-wrapper {
     padding: 0 28px;
   }
@@ -397,8 +399,8 @@
   }
 }
 
-@media screen and (max-width: 41.25rem) {
-  // 660px임
+@media screen and (max-width: 660px) {
+  // 660px임 41.25
   // subscription-inducement
   .inducement-content {
     flex-direction: column;
@@ -441,7 +443,8 @@
     right: 7%;
   }
 }
-@media screen and (max-width: 34.375rem) {
+@media screen and (max-width: 550px) {
+  //34.375rem
   .subscription {
     padding-top: 9.9rem;
   }
@@ -596,7 +599,8 @@
   }
 }
 
-@media screen and (max-width: 22.68rem) {
+@media screen and (max-width: 362.88px) {
+  // 22.68
   .issue-img {
     width: 50px;
     height: 80px;

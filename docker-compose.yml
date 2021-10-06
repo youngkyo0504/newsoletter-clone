@@ -9,5 +9,5 @@ services:
       - ./:/srv/jekyll #host pc : cotainer 내부 명령
     ports:
       - "4000:4000"
-
-    command: "jekyll serve --force_polling"
+    command: sh -c "bundle install &&
+      jekyll serve --force_polling"

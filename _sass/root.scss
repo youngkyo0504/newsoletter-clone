@@ -1,27 +1,3 @@
-:root {
-  --newso-main-color-green: #006933;
-  --newso-main-color-blue: #3981c3;
-  --newso-text-color-ivory: #fff8e6;
-  --newso-text-color-ivory-opa-40: rgba(255, 248, 230, 0.4);
-  --newso-text-color-ivory-subscription: #f9f7ed;
-  --newso-text-color-ivory-subscription-opacity-9: rgba(249, 247, 237, 0.9);
-  --newso-text-color-ivory-subscription-opacity-6: rgba(249, 247, 237, 0.6);
-  --newso-text-color-gray: #666666;
-  --newso-border-color-gray: #979797;
-  --newso-main-text-color-black: #000000;
-  --newso-sub-text-color-black: #000000;
-  --newso-mo-nav-text-color: #fff8e6;
-  --newso-background-color-ivory: #fff8e8;
-  --newso-modal-background-color: #fffdf6;
-  --newso-background-color-ivory-brighthen: #fffdf6;
-  --newso-background-color-ivory-opacity-90: rgba(255, 248, 232, 0.9);
-  --newso-footer-background-color: #f9f9f9;
-  --newso-preface-background-color: #fffdf6;
-  --newso-kakao-text-color: #3f1d1d;
-  --newso-line-color: #231e1f;
-  --newso-blue-color: #3981c3;
-  --newso-red-color: #e05451;
-}
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "Cafe24SsurroundAir";
@@ -39,13 +15,6 @@ body {
   font-family: "Cafe24SsurroundAir", sans-serif;
 }
 
-@mixin spoca-han {
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-}
-
-@mixin line {
-  background-color: var(--newso-line-color);
-}
 .content-wrraper {
   max-width: 1112px;
   padding: 0 20px 0 20px;
@@ -54,24 +23,6 @@ body {
 
   //   background-color: greenyellow;
 }
-@mixin cafe24 {
-  font-family: "Cafe24SsurroundAir";
-}
-@mixin normal-text {
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-}
-
-@mixin newso-btn {
-  border-radius: 4px;
-  letter-spacing: -1px;
-  color: var(--newso-text-color-ivory-subscription);
-  background-color: var(--newso-main-color-green);
-  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.36);
-}
-
 .width-full {
   width: 100%;
 }
@@ -111,15 +62,6 @@ body {
 }
 .margin-auto {
   margin: auto;
-}
-@mixin fiexed-full {
-  /* 모두 채워지지 않으면 vh로 바꾸기  */
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
 }
 
 .modal-wrapper {

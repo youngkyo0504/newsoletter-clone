@@ -1,3 +1,4 @@
+@import "mixin";
 .newso-subscription-page-subscribe {
   background-color: #fffdf6;
   padding: 14.5rem 4rem;
@@ -85,7 +86,7 @@
   background-color: var(--newso-main-color-green);
 }
 
-@media screen and (max-width: 34.375rem) {
+@media screen and (max-width: 550px) {
   .newso-subscription-page-subscribe {
     padding: 10rem 2rem 0 2rem;
   }

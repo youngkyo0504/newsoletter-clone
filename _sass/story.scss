@@ -1,3 +1,4 @@
+@import "mixin";
 .newso-story {
   padding-top: 15.8em;
 
@@ -46,7 +47,8 @@
   margin-bottom: 3.75em;
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
+  // 50rem
   .story-content {
     max-width: 100%;
   }

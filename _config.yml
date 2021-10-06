@@ -29,7 +29,6 @@ url: "http://newso.co.kr" # the base hostname & protocol for your site, e.g. htt
 twitter_username: jekyllrb
 github_username: newsoletter
 # Build settings
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
