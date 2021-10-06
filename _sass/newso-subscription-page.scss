@@ -18,7 +18,7 @@
   padding: 0.9rem;
 }
 .newso-subscription-page-subscribe .stb-form-policy {
-  margin: 2rem 0 3.3rem 0;
+  margin: 2rem 0 0 0;
 }
 .newso-subscription-page-subscribe .subscribe-form-label {
   color: var(--newso-text-color-gray);
@@ -29,8 +29,9 @@
   letter-spacing: -0.58px;
 }
 .newso-subscription-page-subscribe .stb-form-policy label button {
-  color: var(--newso-main-color-blue);
+  color: #3981c3;
   text-decoration: underline;
+  text-underline-position: under;
 }
 
 .newso-subscription-page-subscribe .stb-form-policy label input {
@@ -85,7 +86,19 @@
   color: var(--newso-text-color-ivory-subscription);
   background-color: var(--newso-main-color-green);
 }
+// 에러 메시지 사진과 글
+.newso-subscription-page-subscribe .error-message {
+  display: flex;
+  align-items: center;
+  color: #e05451;
+  margin: 20px 0 20px 0;
+}
 
+.newso-subscription-page-subscribe .warning-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
 @media screen and (max-width: 550px) {
   .newso-subscription-page-subscribe {
     padding: 10rem 2rem 0 2rem;

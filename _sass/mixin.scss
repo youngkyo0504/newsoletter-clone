@@ -25,6 +25,7 @@
 
 @mixin spoca-han {
   font-family: "Spoqa Han Sans Neo", sans-serif;
+  @include normal-text();
 }
 
 @mixin line {

@@ -3,49 +3,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const purge = require("gulp-css-purge");
 const cleancss = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
-// exports.default = () =>
-//   gulp
-//     .src("./assets/css/*.css")
-//     .pipe(
-//       autoprefixer({
-//         cascade: false,
-//       })
-//     )
-//     .pipe(gulp.dest("./dist"));
-
-// ("use strict");
-
-// var gulp = require("gulp");
-// var sass = require("gulp-sass")(require("sass"));
-// const autoprefixer = require("gulp-autoprefixer");
-
-// console.log(gulp);
-
-// function buildStyles() {
-//   return gulp
-//     .src("s.scss")
-//     .pipe(sass().on("error", sass.logError))
-//     .pipe(
-//       autoprefixer({
-//         cascade: false,
-//       })
-//     )
-//     .pipe(gulp.dest("."));
-// }
-
-// gulp
-//   .src("./assets/**/*.scss")
-//   .pipe(sass().on("error", sass.logError))
-// .pipe(
-//   autoprefixer({
-//     cascade: false,
-//   })
-// )
-//   .pipe(gulp.dest("./dist"));
-// exports.buildStyles = buildStyles;
-// exports.watch = function () {
-//   gulp.watch("s.scss", ["sass"]);
-// };
+const autoprefixers = require("autoprefixer");
 var gcmq = require("gulp-group-css-media-queries");
 const { src, dest } = require("gulp");
 
@@ -68,11 +26,7 @@ const options = {
 function styles() {
   return src(paths.css.src, { sourcemaps: true })
     .pipe(sass(options.scss).on("error", sass.logError))
-    .pipe(
-      autoprefixer({
-        cascade: false,
-      })
-    )
+    .pipe(postcss([autoprefixers()]))
     .pipe(gcmq())
     .pipe(
       purge({
@@ -86,23 +40,26 @@ function styles() {
         level: { 1: { specialComments: 0 }, 2: { removeDuplicateRules: true } },
       })
     )
+
     .pipe(dest(paths.css.dest, { sourcemaps: true }));
 }
 
 exports.style = styles;
-// const gulp = require("gulp");
 
-// gulp.task("autoprefixer", () => {
-//   const autoprefixer = require("autoprefixer");
-//   const sourcemaps = require("gulp-sourcemaps");
-//   const postcss = require("gulp-postcss");
+///////////////////
 
-//   return gulp
-//     .src("./dist/css/*.css")
-//     .pipe(sourcemaps.init())
-//     .pipe(postcss([autoprefixer()]))
-//     .pipe(sourcemaps.write("."))
-//     .pipe(gulp.dest("./dest"));
-// });
+const gulp = require("gulp");
 
-// exports.style = autoprefixer;
+gulp.task("autoprefixer", async function () {
+  const autoprefixers = require("autoprefixer");
+  const sourcemaps = require("gulp-sourcemaps");
+  const postcss = require("gulp-postcss");
+  return gulp
+    .src("./*.css")
+    .pipe(sourcemaps.init())
+    .pipe(postcss([autoprefixers()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("./assets/de"));
+});
+
+exports.autoprefix = autoprefixer;

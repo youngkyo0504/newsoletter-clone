@@ -20,6 +20,13 @@
   margin-top: 0.6rem;
   margin-bottom: 1.7rem;
 }
+
+.stb_form_modal_open_btn {
+  color: var(--newso-blue-color);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 .stb_form {
   padding-right: 1rem;
 }
@@ -34,7 +41,9 @@
   letter-spacing: -0.67px;
   padding: 0;
 }
-
+.stb_form_set_input {
+  padding: 0.9rem;
+}
 .padding-field {
   padding-left: 0.8rem;
   font-size: 1.6rem;
@@ -63,10 +72,10 @@
   padding-bottom: 0.4rem;
 }
 .stb_form_policy {
-  margin: 20px 0 40px 0;
+  margin: 20px 0 0 0;
 }
 .stb_form_policy label button {
-  color: var(--newso-main-color-blue);
+  color: #3981c3;
 }
 .stb_form_policy label input {
   border: solid 1px var(--newso-border-color-gray);
@@ -83,7 +92,19 @@
   height: 6.6rem;
   letter-spacing: -1px;
 }
+// 에러 메시지 사진과 글
+.error-message {
+  display: flex;
+  align-items: center;
+  color: #e05451;
+  margin: 20px 0 20px 0;
+}
 
+.warning-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
 @media screen and (max-width: 928px) {
   //58rem
   .subscription-content {

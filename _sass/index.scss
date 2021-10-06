@@ -145,6 +145,7 @@
 
 //가격동향
 .graph-img-container {
+  height: 294px;
   width: 49rem;
 }
 
@@ -204,14 +205,33 @@
 .disease-icon-container:nth-child(2) {
   margin: 0 6.25em;
 }
+
 .disease-icon-container {
   align-items: flex-start;
 }
 
+.description-disease-icons .disease-icon-container:nth-child(1) {
+  .disease-support-img {
+    width: 49px;
+    height: 42px;
+  }
+}
+
+.description-disease-icons .disease-icon-container:nth-child(2) {
+  .disease-support-img {
+    width: 54px;
+    height: 42px;
+  }
+}
+
+.description-disease-icons .disease-icon-container:nth-child(3) {
+  .disease-support-img {
+    width: 42px;
+    height: 42px;
+  }
+}
 .disease-support-img {
   margin-top: 1em;
-  width: 55px;
-  height: 55px;
 }
 
 //사양관리
@@ -303,12 +323,16 @@
   border: solid 1px rgb(255, 255, 255);
 }
 
+.graph-img-container img {
+  background-color: white;
+}
+
 @media screen and(max-width:1072px) {
   .graph-img {
     flex-direction: column;
   }
 
-  .graph-img img {
+  .graph-img-container {
     margin-top: 1.2rem;
   }
 }

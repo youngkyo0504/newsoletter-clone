@@ -54,7 +54,7 @@
   }
 
   .newso-story {
-    padding-top: 9.6rem;
+    padding-top: 15rem;
   }
 
   .story-title {
@@ -70,5 +70,11 @@
   .story-jonnie-img {
     width: 88px;
     height: 142px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .newso-story {
+    padding-top: 9.6rem;
   }
 }

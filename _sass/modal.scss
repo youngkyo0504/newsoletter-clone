@@ -27,7 +27,7 @@
   padding: 0.9rem;
 }
 .modal-subscribe .stb-form-policy {
-  margin: 2rem 0 3.3rem 0;
+  margin: 2rem 0 0 0;
 }
 .modal-subscribe .subscribe-form-label {
   color: var(--newso-text-color-gray);
@@ -38,13 +38,27 @@
   letter-spacing: -0.58px;
 }
 .modal-subscribe .stb-form-policy label button {
-  color: var(--newso-main-color-blue);
+  color: #3981c3;
   text-decoration: underline;
+  text-underline-position: under;
 }
 
 .modal-subscribe .stb-form-policy label input {
   border: solid 1px var(--newso-border-color-gray);
   border-radius: 4px;
+}
+//에러 메세지
+.modal-subscribe .error-message {
+  display: flex;
+  align-items: center;
+  color: #e05451;
+  margin: 17px 0 16px 0;
+}
+
+.modal-subscribe .warning-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
 }
 
 .modal-subscribe .modal-subscribe-button {

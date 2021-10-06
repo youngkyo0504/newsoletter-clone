@@ -67,10 +67,6 @@
     "url": "https://github.com/newsoletter/newso/issues"
   },
   "homepage": "https://github.com/newsoletter/newso#readme",
-  "description": "",
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "maintained node versions"
-  ]
+  "description": ""
+
 }
