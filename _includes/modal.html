@@ -70,13 +70,34 @@
             />
             <button
               data-modal="stb_form_policy_modal"
-              class="subscribe-form-policy-open-btn"
+              class="subscribe-form-policy-open-btn js-policy-open-btn"
               type="button"
             >
               개인정보 수집 및 이용</button
             >에 동의합니다.
           </label>
-          <div class="error-message"></div>
+          <div class="result-message">
+            <div class="flex-row success error-text-container">
+              <span class="warning-img">
+                <img
+                  class="full-size-fit"
+                  src="/assets/images//warning/icon-check@2x.png"
+                  alt=""
+                />
+              </span>
+              <span class="result-message-text"> 이메일을 보냈습니다. </span>
+            </div>
+            <div class="flex-row fail error-text-container">
+              <span class="warning-img">
+                <img
+                  class="full-size-fit"
+                  src="/assets/images//warning/icon-warning@2x.png"
+                  alt=""
+                />
+              </span>
+              <span class="result-message-text"> 이메일을 보냈습니다. </span>
+            </div>
+          </div>
           <div class="subscribe-form-msg-error" id="stb_policy_error"></div>
 
           <!-- 개인정보모달창 -->

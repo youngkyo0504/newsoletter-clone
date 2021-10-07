@@ -87,7 +87,7 @@
   background-color: var(--newso-main-color-green);
 }
 // 에러 메시지 사진과 글
-.newso-subscription-page-subscribe .error-message {
+.newso-subscription-page-subscribe .result-message {
   display: flex;
   align-items: center;
   color: #e05451;
@@ -98,6 +98,12 @@
   width: 20px;
   height: 20px;
   margin-right: 4px;
+}
+.success {
+  color: #40914d;
+}
+.error-text-container {
+  display: none;
 }
 @media screen and (max-width: 550px) {
   .newso-subscription-page-subscribe {

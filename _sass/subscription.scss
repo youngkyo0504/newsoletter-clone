@@ -92,14 +92,21 @@
   height: 6.6rem;
   letter-spacing: -1px;
 }
+
+.success {
+  color: #40914d;
+}
 // 에러 메시지 사진과 글
-.error-message {
+.result-message {
   display: flex;
   align-items: center;
   color: #e05451;
   margin: 20px 0 20px 0;
 }
-
+// 모든 eror-text-container
+.error-text-container {
+  display: none;
+}
 .warning-img {
   width: 20px;
   height: 20px;

@@ -48,13 +48,19 @@
   border-radius: 4px;
 }
 //에러 메세지
-.modal-subscribe .error-message {
+.modal-subscribe .result-message {
   display: flex;
   align-items: center;
   color: #e05451;
   margin: 17px 0 16px 0;
 }
+.error-text-container {
+  display: none;
+}
 
+.success {
+  color: #40914d;
+}
 .modal-subscribe .warning-img {
   width: 20px;
   height: 20px;
