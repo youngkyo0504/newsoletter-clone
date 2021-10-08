@@ -81,36 +81,21 @@ async function subscribeNewso(e, form) {
 function showSubscribeResult(result, resultMessage) {
   const success = resultMessage.querySelector(".success");
   const fail = resultMessage.querySelector(".fail");
-  const successMessage = success.querySelector(".result-message-text");
-  const failMessage = fail.querySelector(".result-message-text");
-  let messageText;
 
-  switch (result) {
-    case "update":
-      messageText = `입력하신 이메일 주소로 확인 메일을 보내드렸습니다.`;
-      showText(success, successMessage, messageText);
-      break;
-    case "success":
-      messageText = `입력하신 이메일 주소로 확인 메일을 보내드렸습니다.`;
-      showText(success, successMessage, messageText);
-      break;
-    case "failExistEmail":
-      messageText = "이미 구독 중인 이메일 주소입니다.";
-      showText(fail, failMessage, messageText);
-      break;
-    case "failUnknown":
-      messageText =
-        "이런, 뭔가 잘못된 것 같습니다. 입력한 값을 다시 확인하세요.";
-      showText(fail, failMessage, messageText);
-      break;
-    default:
-      messageText = "이메일을 확인해 주세요.";
-      showText(fail, failMessage, messageText);
-      break;
+  const getMessageByResult = {
+    "update": { status: success, text: "입력하신 이메일 주소로 확인 메일을 보내드렸습니다." },
+    "success": { status: success, text: "입력하신 이메일 주소로 확인 메일을 보내드렸습니다." },
+    "failExistEmail": { status: fail, text: "이미 구독 중인 이메일 주소입니다." },
+    "failUnknown": { status: fail, text: "이런, 뭔가 잘못된 것 같습니다. 입력한 값을 다시 확인하세요." },
+    "default": { status: fail, text: "이메일을 확인해주세요" },
   }
+
+  const message = getMessageByResult[result] || getMessageByResult['default']
+  showText(message)
 }
 
-function showText(result, resultMessage, messageText) {
-  resultMessage.innerText = messageText;
-  result.style.display = "flex";
+function showText({ status, text }) {
+  const messageElement = status.querySelector('.result-message-text')
+  messageElement.innerText = text
+  status.style.display = "flex";
 }
