@@ -1,6 +1,1 @@
-User-agent: Yeti
-Allow:/
-User-agent: *
-Allow:/
-
 Sitemap:https://newso.co.kr/sitemap.xml
