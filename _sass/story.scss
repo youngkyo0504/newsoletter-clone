@@ -1,7 +1,6 @@
 @import "mixin";
 .newso-story {
   padding-top: 15.8em;
-
   @include normal-text;
 }
 
@@ -12,7 +11,6 @@
 
 .story-content {
   font-size: 1.6rem;
-
   @include spoca-han;
 }
 .story-content-text {

@@ -2,7 +2,7 @@
 .newso-footer {
   min-height: 12.2rem;
   font-size: 1.2rem;
-  background-color: var(--newso-footer-background-color);
+  background-color: $--newso-footer-background-color;
   width: 100%;
 
   @include spoca-han;
@@ -17,7 +17,8 @@
   letter-spacing: -0.14px;
   margin-right: 6px;
 }
-
+// :%s/(.\({-})\)/* $\1 \2]/g
+// :%s/<li><a href="\(.\{-}\)">\(.\{-}\)<\/a>/* [\1 \2]/g
 .address {
   letter-spacing: -0.5px;
 }

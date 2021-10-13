@@ -1,8 +1,9 @@
 @import "mixin";
+
 .nav-wrraper {
   max-height: 8.7rem;
   font-size: 1.6rem;
-  background-color: var(--newso-main-color-green);
+  background-color: $--newso-main-color-green;
   border-bottom: #1d1d1b solid 2px;
 }
 .navbar {
@@ -23,37 +24,26 @@
   margin: 0 3em 0 0;
   height: 4rem;
   letter-spacing: -0.67px;
-  color: var(--newso-text-color-ivory);
+  color: $--newso-text-color-ivory;
   @include normal-text;
   transition: 0.3s;
 }
 .navigation-menu-item:hover {
-  box-shadow: inset 0 -2px 0 var(--newso-text-color-ivory);
+  box-shadow: inset 0 -2px 0 $--newso-text-color-ivory;
 }
 
 .subscribe-btn {
-  padding: 1.1rem 2rem 1rem 2.1rem;
-  border-radius: 20.5px;
-  background-color: var(--newso-background-color-ivory);
-  color: var(--newso-main-color-green);
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  transition: background-color 0.3s;
+  @include navigation-btn(
+    $--newso-background-color-ivory,
+    $--newso-main-color-green
+  );
 }
 
 .subscribe-kakao-btn {
-  padding: 1.1rem 2rem 1rem 2.1rem;
-  border-radius: 20.5px;
-  background-color: var(--newso-background-color-ivory);
-  color: var(--newso-kakao-text-color);
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  margin-left: 1.2rem;
-  transition: background-color 0.3s;
+  @include navigation-btn(
+    $--newso-background-color-ivory,
+    $--newso-kakao-text-color
+  );
 }
 .subscribe-btn:hover {
   background-color: #f1af12;
@@ -69,7 +59,7 @@
 }
 
 .unactive-url {
-  color: var(--newso-text-color-ivory-opa-40);
+  color: $--newso-text-color-ivory-opa-40;
   transition: 0.3s;
 }
 .mo-menu-btn {

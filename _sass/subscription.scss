@@ -22,9 +22,12 @@
 }
 
 .stb_form_modal_open_btn {
-  color: var(--newso-blue-color);
-  text-decoration: underline;
+  color: $--newso-blue-color;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
   text-underline-position: under;
+  -webkit-text-underline-position: under;
+  line-height: unset;
 }
 
 .stb_form {
@@ -52,7 +55,7 @@
 }
 
 .newso_strong {
-  color: var(--newso-main-color-green);
+  color: $--newso-main-color-green;
   margin-bottom: 2.4rem;
   margin-top: 2.4rem;
   font-weight: bold;
@@ -62,13 +65,13 @@
 }
 .stb_form_set .stb_form_set_input {
   background-color: transparent;
-  border: solid 1px var(--newso-border-color-gray);
+  border: solid 1px $--newso-border-color-gray;
   border-radius: 4px;
   height: 4.8rem;
 }
 
 .stb_form_set .stb_form_set_label {
-  color: var(--newso-text-color-gray);
+  color: $--newso-text-color-gray;
   padding-bottom: 0.4rem;
 }
 .stb_form_policy {
@@ -78,7 +81,7 @@
   color: #3981c3;
 }
 .stb_form_policy label input {
-  border: solid 1px var(--newso-border-color-gray);
+  border: solid 1px $--newso-border-color-gray;
   border-radius: 4px;
 }
 .stb_form_submit_button {
@@ -86,8 +89,8 @@
   font-size: 2.4rem;
   width: 26.3rem;
   letter-spacing: -1px;
-  color: var(--newso-text-color-ivory-subscription);
-  background-color: var(--newso-main-color-green);
+  color: $--newso-text-color-ivory-subscription;
+  background-color: $--newso-main-color-green;
   padding: 1.9rem 8.7rem;
   height: 6.6rem;
   letter-spacing: -1px;

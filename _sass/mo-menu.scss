@@ -1,14 +1,13 @@
 @import "mixin";
 $nav-text: #fff8e6;
 .mo-menu-overlay {
-  background-color: var(--newso-main-color-green);
+  background-color: $--newso-main-color-green;
+  color: $--newso-mo-nav-text-color;
   position: relative;
   letter-spacing: -0.58px;
-  @include fiexed-full;
-  @include normal-text;
-  @include spoca-han;
   overflow: auto;
-  color: var(--newso-mo-nav-text-color);
+  @include fiexed-full;
+  @include spoca-han;
 }
 .mo-modal-wrapper {
   width: 100%;
@@ -44,7 +43,7 @@ $nav-text: #fff8e6;
 
 .mo-menu-line {
   height: 1px;
-  background-color: var(--newso-mo-nav-text-color);
+  background-color: $--newso-mo-nav-text-color;
   margin: 9.1rem 0 2.4rem 0;
 }
 
@@ -73,9 +72,9 @@ $nav-text: #fff8e6;
 }
 
 .mo-menu-subscribe-btn .nav-mo-menu-btn {
-  background-color: var(--newso-mo-nav-text-color);
+  background-color: $--newso-mo-nav-text-color;
   border-radius: 30px;
-  color: var(--newso-main-color-green);
+  color: $--newso-main-color-green;
 }
 .mo-menu-subscribe-btn .mo-menu-btn-img {
   width: 36px;
@@ -85,7 +84,7 @@ $nav-text: #fff8e6;
 .mo-menu-kakao-btn .nav-mo-menu-btn {
   background-color: #ffe404;
   border-radius: 30px;
-  color: var(--newso-kakao-text-color);
+  color: $--newso-kakao-text-color;
 }
 .mo-menu-kakao-btn .mo-menu-btn-img {
   width: 28px;

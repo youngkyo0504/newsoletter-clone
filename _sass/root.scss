@@ -1,3 +1,4 @@
+@import "mixin";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @font-face {
   font-family: "Cafe24SsurroundAir";
@@ -85,11 +86,11 @@ body {
 
 //text color
 .newso-blue-text {
-  color: var(--newso-blue-color);
+  color: $--newso-blue-color;
 }
 
 .newso-red-text {
-  color: var(--newso-red-color);
+  color: $--newso-red-color;
 }
 
 // 푸터 바닥 고정시키기 위함 /

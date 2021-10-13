@@ -1,6 +1,6 @@
 @import "mixin";
 .modal-policy {
-  background-color: var(--newso-modal-background-color);
+  background-color: $--newso-modal-background-color;
   width: 47.4rem;
   // height: 56.1rem;
   padding: 4.8rem 4rem;
@@ -22,8 +22,8 @@
 }
 
 .overlay-policy {
-  @include fiexed-full;
   background-color: rgba(0, 0, 0, 0.3);
+  @include fiexed-full;
 }
 
 .modal-policy-title {

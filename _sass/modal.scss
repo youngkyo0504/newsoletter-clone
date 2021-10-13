@@ -1,10 +1,10 @@
 @import "mixin";
 .overlay-subscribe {
-  @include fiexed-full;
   background-color: rgba(0, 0, 0, 0.3);
+  @include fiexed-full;
 }
 .modal-subscribe {
-  background-color: var(--newso-modal-background-color);
+  background-color: $--newso-modal-background-color;
   width: 47.4rem;
   height: 56.1rem;
   padding: 4.8rem 4rem;
@@ -21,7 +21,7 @@
 .modal-subscribe .subscribe-form-input {
   // width require
   background-color: transparent;
-  border: solid 1px var(--newso-border-color-gray);
+  border: solid 1px $--newso-border-color-gray;
   border-radius: 4px;
   height: 4.8rem;
   padding: 0.9rem;
@@ -30,7 +30,7 @@
   margin: 2rem 0 0 0;
 }
 .modal-subscribe .subscribe-form-label {
-  color: var(--newso-text-color-gray);
+  color: $--newso-text-color-gray;
   padding-bottom: 0.4rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .modal-subscribe .stb-form-policy label input {
-  border: solid 1px var(--newso-border-color-gray);
+  border: solid 1px $--newso-border-color-gray;
   border-radius: 4px;
 }
 //에러 메세지
@@ -72,12 +72,15 @@
   font-size: 2.4rem;
   width: 100%;
   letter-spacing: -1px;
-  color: var(--newso-text-color-ivory-subscription);
-  background-color: var(--newso-main-color-green);
+  color: $--newso-text-color-ivory-subscription;
+  background-color: $--newso-main-color-green;
   padding: 1.9rem 8.7rem;
   height: 6.6rem;
 }
 
+.subscribe-form-policy-open-btn {
+  line-height: unset;
+}
 .modal-subscribe .modal-newso-logo-container {
   text-align: center;
   font-size: 1.4rem;
@@ -110,6 +113,6 @@
 
 .modal-subscribe-btn {
   letter-spacing: -1px;
-  color: var(--newso-text-color-ivory-subscription);
-  background-color: var(--newso-main-color-green);
+  color: $--newso-text-color-ivory-subscription;
+  background-color: $--newso-main-color-green;
 }
