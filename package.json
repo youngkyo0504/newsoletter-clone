@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "gulp-sass": "^5.0.0",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "webpack-cli": "^4.9.0"
   },
   "name": "newso",
   "version": "1.0.0",
@@ -68,5 +69,4 @@
   },
   "homepage": "https://github.com/newsoletter/newso#readme",
   "description": ""
-
 }

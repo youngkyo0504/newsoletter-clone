@@ -177,6 +177,14 @@
       gtag("config", "G-70D4ZJ4V16"); // additional config
       gtag("config", "G-QV1PHRXGH3");
     </script>
+  </head>
+
+  <body>
+    <div class="container contents-wrap">
+      {% include navigation.html %} {% include modal.html %}{% include
+      mo-nav.html %}{% include modal-information.html %} {{ content }} {%include
+      footer.html %}
+    </div>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
       // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
@@ -191,13 +199,5 @@
         });
       }
     </script>
-  </head>
-
-  <body>
-    <div class="container contents-wrap">
-      {% include navigation.html %} {% include modal.html %}{% include
-      mo-nav.html %}{% include modal-information.html %} {{ content }} {%include
-      footer.html %}
-    </div>
   </body>
 </html>

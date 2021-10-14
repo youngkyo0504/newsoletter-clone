@@ -1,12 +1,22 @@
 import subscribeAPI from "./subscribeAPI.js";
 
 // component open/close 메서드
-function showConponent(className) {
-  const overlay = document.querySelector(className);
-  overlay.hidden = false;
+function showComponent(className, element) {
+  if (element) {
+    const showComponent = element.querySelector(className);
+    showComponent.hidden = false;
+    return;
+  }
+  const showComponent = document.querySelector(className);
+  showComponent.hidden = false;
 }
 
-function hideComponent(className) {
+function hideComponent(className, element) {
+  if (element) {
+    const showComponent = element.querySelector(className);
+    showComponent.hidden = true;
+    return;
+  }
   const overlay = document.querySelector(className);
   overlay.hidden = true;
 }
@@ -28,7 +38,7 @@ function makeOpenBtn(btnName, openComponentName) {
   const btns = document.querySelectorAll(btnName);
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      showConponent(openComponentName);
+      showComponent(openComponentName);
     });
   });
 }
@@ -52,12 +62,14 @@ function getUser(form) {
 // mainsubscribe 함수
 async function subscribeNewso(e, form) {
   e.preventDefault();
+  showComponent(".loading-sppiner", form);
   // 메세지 지우고 시작
   const resultMessage = form.querySelector(".result-message");
   hideSubscribeResult(resultMessage);
   const user = getUser(form);
   const result = await subscribeAPI.addSubscriber(user);
   // 메세지 보여주기
+  hideComponent(".loading-sppiner", form);
   showSubscribeResult(result, resultMessage, user);
 }
 

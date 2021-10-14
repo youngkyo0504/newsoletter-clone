@@ -105,5 +105,22 @@ body {
     flex: 1;
   }
 }
-
 //&nbsp는 띄어쓰기
+.loading-sppiner {
+  box-sizing: initial;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid rgba($color: $--newso-main-color-green, $alpha: 0.2);
+  border-top: 3px solid $--newso-main-color-green;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -20,17 +20,17 @@
             <fieldset class="flex-col stb_form_set">
                 <label for="stb_email" class="stb_form_set_label">
                     이메일 주소
+                    <input type="email" class="stb_form_set_input js-email-input"  name="email" required="required">
                 </label>
-                <input type="email" class="stb_form_set_input js-email-input"  name="email" required="required">
 
                 <div class="stb_form_msg_error" ></div>
             </fieldset>
             <fieldset class="flex-col stb_form_set">
                 <label for="stb_name" class="stb_form_set_label ">
                     이름
+                    <input type="text" class="stb_form_set_input js-name-input"  name="name">
                 </label>
 
-                <input type="text" class="stb_form_set_input js-name-input"  name="name">
                 <div class="stb_form_msg_error" ></div>
             </fieldset>
 
@@ -43,6 +43,7 @@
                         type="button">개인정보 수집 및 이용</button>에 동의합니다.
                 </label>
                 <div class="result-message"> 
+                    <div hidden class="loading-sppiner"></div>
                     <div class="flex-row success error-text-container">
                         <span class="warning-img ">
                             <img class="full-size-fit" src="/assets/images//warning/check2.png" alt="">
