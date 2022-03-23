@@ -20,7 +20,7 @@ class SubscribeAPI {
     try {
       //aws 람다임
       const response = await fetch(
-        "https://9obxi09j3a.execute-api.us-east-2.amazonaws.com/newso-subscribe/subscribe",
+        "https://84l4s5m4ik.execute-api.ap-northeast-2.amazonaws.com/default/newso-subscribe",
         requestOptions
       ).then((response) => response.json());
       const subscribeResult = response.body.result;
