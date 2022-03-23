@@ -1,7 +1,7 @@
+node_modules
 _site
 .env
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-node_modules
 vendor
