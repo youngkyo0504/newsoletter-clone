@@ -116,7 +116,7 @@ const imagesUrls = [
   "/assets/images/color-icons/bn-hover-insta@2x.png",
   "/assets/images/color-icons/bn-hover-facebook@2x.png",
   "/assets/images/color-icons/bn-hover-data@2x.png",
-  "assets/images/color-icons/bn-hover-kakaotalk@2x.png",
+  "/assets/images/color-icons/bn-hover-kakaotalk@2x.png",
   "/assets/images/color-icons/bn-hover-mail@2x.png",
 ];
 
