@@ -1,5 +1,12 @@
 import subscribeAPI from "./subscribeAPI.js";
-
+// preload
+function preloadImages(imagesURLs) {
+  imagesURLs.forEach((url) => {
+    const image = new Image();
+    console.log(location.origin);
+    image.src = window.location.origin + url;
+  });
+}
 // component open/close 메서드
 function showComponent(className, element) {
   if (element) {
@@ -105,6 +112,15 @@ function showText({ status, text }) {
 }
 
 // 실제 동작 함수
+const imagesUrls = [
+  "/assets/images/color-icons/bn-hover-insta@2x.png",
+  "/assets/images/color-icons/bn-hover-facebook@2x.png",
+  "/assets/images/color-icons/bn-hover-data@2x.png",
+  "assets/images/color-icons/bn-hover-kakaotalk@2x.png",
+  "/assets/images/color-icons/bn-hover-mail@2x.png",
+];
+
+preloadImages(imagesUrls);
 makeOpenBtn(".js-subscribe-open-btn", ".overlay-subscribe");
 makeOpenBtn(".js-policy-open-btn", ".overlay-policy");
 makeOpenBtn(".mo-menu-btn", ".mo-menu-overlay");
