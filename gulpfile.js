@@ -1,13 +1,11 @@
 // const gulp = require("gulp");
-const autoprefixer = require("gulp-autoprefixer");
 const purge = require("gulp-css-purge");
 const cleancss = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 const autoprefixers = require("autoprefixer");
-var gcmq = require("gulp-group-css-media-queries");
-const { src, dest } = require("gulp");
-
+const gcmq = require("gulp-group-css-media-queries");
 const sass = require("gulp-sass")(require("sass"));
+const { src, dest, series, watch } = require("gulp");
 
 const paths = {
   css: {
@@ -23,7 +21,7 @@ const options = {
   },
 };
 
-function styles() {
+function css() {
   return src(paths.css.src, { sourcemaps: true })
     .pipe(sass(options.scss).on("error", sass.logError))
     .pipe(postcss([autoprefixers()]))
@@ -44,22 +42,8 @@ function styles() {
     .pipe(dest(paths.css.dest, { sourcemaps: true }));
 }
 
-exports.style = styles;
+exports.default = series(css);
 
-///////////////////
-
-const gulp = require("gulp");
-
-gulp.task("autoprefixer", async function () {
-  const autoprefixers = require("autoprefixer");
-  const sourcemaps = require("gulp-sourcemaps");
-  const postcss = require("gulp-postcss");
-  return gulp
-    .src("./*.css")
-    .pipe(sourcemaps.init())
-    .pipe(postcss([autoprefixers()]))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("./assets/de"));
-});
-
-exports.autoprefix = autoprefixer;
+exports.watch = function () {
+  watch(paths.css.src, css);
+};
