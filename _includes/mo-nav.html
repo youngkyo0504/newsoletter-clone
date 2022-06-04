@@ -4,7 +4,7 @@
       <button class="mo-menu-modal-exit">
         <img
           class="full-size-fit"
-          src="/assets/images/close-button/mo-btn-close@2x.png"
+          src="{{ site.baseurl }}/assets/images/close-button/mo-btn-close@2x.png"
           alt="close-btn"
         />
       </button>
@@ -15,7 +15,7 @@
         <ul class="mo-menu-items">
           {% for item in site.data.navigation %}
           <li class="flex-row">
-            <a href="{{ item.link }}">{{item.name}}</a>
+            <a href="{{ site.baseurl }}{{ item.link }}">{{item.name}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -26,21 +26,21 @@
         <div class="mo-menu-logo">
           <img
             class="full-size-fit"
-            src="/assets/images/logo-text/mo-logo-menu@2x.png"
+            src="{{ site.baseurl }}/assets/images/logo-text/mo-logo-menu@2x.png"
             alt=""
           />
         </div>
         <div class="mo-menu-text">뉴소레터를 만나는 법</div>
       </div>
       <ul class="mo-menu-btn-list flex-col">
-        <a href="/sub_page/newso-subscription.html">
+        <a href="{{ site.baseurl }}/sub_page/newso-subscription.html">
           <li class="mo-menu-subscribe-btn">
             <button class="nav-mo-menu-btn flex-row">
               <div class="flex">
                 <div class="mo-menu-btn-img">
                   <img
                     class="full-size-fit"
-                    src="/assets/images/icon/mo-logo/mo-img-face@2x.png"
+                    src="{{ site.baseurl }}/assets/images/icon/mo-logo/mo-img-face@2x.png"
                     alt=""
                   />
                 </div>
@@ -58,7 +58,7 @@
               <div class="mo-menu-btn-img">
                 <img
                   class="full-size-fit"
-                  src="/assets/images/icon/mo-logo/mo-img-kakao@2x.png"
+                  src="{{ site.baseurl }}/assets/images/icon/mo-logo/mo-img-kakao@2x.png"
                   alt=""
                 />
               </div>

@@ -1,19 +1,19 @@
 <div class="sticky nav-wrraper flex-row">
   <nav class="content-wrraper navbar flex-row flex-space-between">
     <div class="newso-logo">
-      <a href="/">
-        <img src="/assets/images/logo-text/logo-text-2@3x.png" alt="" />
+      <a href="{{ site.baseurl }}">
+        <img src="{{ site.baseurl }}/assets/images/logo-text/logo-text-2@3x.png" alt="" />
       </a>
     </div>
     <div class="flex-row desktop-nav">
       <ul class="navigation-menus flex-row">
         {% if page.url == "/" %} {% for item in site.data.navigation %}
         <li class="navigation-menu-item flex-row">
-          <a  href="{{ item.link }}">{{item.name}}</a>
+          <a  href="{{ site.baseurl }}/{{ item.link }}">{{item.name}}</a>
         </li>
         {% endfor %} {% else %} {% for item in site.data.navigation %}
         <li class="navigation-menu-item flex-row">
-          <a   href="{{ item.link }}"  {% if page.url == item.link %} class="active-url" {% else %} class = "unactive-url" {% endif %}>{{item.name}}</a>
+          <a   href="{{ site.baseurl }}/{{ item.link }}"  {% if page.url == item.link %} class="active-url" {% else %} class = "unactive-url" {% endif %}>{{item.name}}</a>
         </li>
         {% endfor %} {% endif %}
       </ul>
@@ -23,7 +23,7 @@
           <div class="kakao-channel">
             <img
               class="full-size-fit"
-              src="/assets/images/kakao-channel/icon-sns-kakao@2x.png"
+              src="{{ site.baseurl }}/assets/images/kakao-channel/icon-sns-kakao@2x.png"
               alt=""
             />
           </div>
@@ -34,7 +34,7 @@
     <div class="mo-menu-btn">
       <img
       class="full-size-fit" 
-      src='/assets/images/hamberger/mo-img-navi@2x.png' alt="">
+      src='{{ site.baseurl }}/assets/images/hamberger/mo-img-navi@2x.png' alt="">
     </div>
   </nav>
 </div>

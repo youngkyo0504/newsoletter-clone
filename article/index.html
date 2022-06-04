@@ -19,7 +19,7 @@ custom_js:
     <!-- article-grid -->
     <div class="article-card-grid">
       {% for post in paginator.posts %}
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
         <div class="article-item">
           <div class="article-title">{{ post.title }}</div>
           <div class="article-date">{{ post.sent_time }}</div>
