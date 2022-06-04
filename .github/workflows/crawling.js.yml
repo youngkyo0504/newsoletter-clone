@@ -32,19 +32,19 @@ jobs:
       with:
         # The name of the user that will be displayed as the author of the commit.
         # Default: depends on the default_author input
-        author_name: Newso
+        author_name: 'Newso'
 
         # The email of the user that will be displayed as the author of the commit.
         # Default: depends on the default_author input
-        author_email: official@antller.com
+        author_email: 'official@antller.com'
 
         # The name of the custom committer you want to use, if different from the author of the commit.
         # Default: the name of the author (set with either author_name or default_author)
-        committer_name: Newso
+        committer_name: 'Newso'
 
         # The email of the custom committer you want to use, if different from the author of the commit.
         # Default: the email of the author (set with either author_email or default_author)
-        committer_email: official@antller.com
+        committer_email: 'official@antller.com'
 
         # The message for the commit.
         # Default: 'Commit from GitHub Actions (name of the workflow)'
@@ -52,7 +52,7 @@ jobs:
 
         # If this input is set, the action will push the commit to a new branch with this name.
         # Default: ''
-        new_branch: "test"
+        new_branch: 'test'
 
 
 
