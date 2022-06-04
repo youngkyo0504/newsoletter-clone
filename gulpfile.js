@@ -10,6 +10,7 @@ const { src, dest, series, watch } = require("gulp");
 const paths = {
   css: {
     src: "./assets/css/*.scss",
+    sass: "./_sass/*.scss",
     dest: "./assets/deploy-css",
   },
 };
@@ -45,5 +46,5 @@ function css() {
 exports.default = series(css);
 
 exports.watch = function () {
-  watch(paths.css.src, css);
+  watch([paths.css.src, paths.css.sass], css);
 };

@@ -1,6 +1,6 @@
 - name: 뉴소레터 이야기
-  link: /sub_page/newso-story.html
+  link: /story/
 - name: 이전 뉴소레터
-  link: https://page.stibee.com/archives/137513
+  link: /article/
 - name: 자주 묻는 질문
-  link: /sub_page/newso-faq.html
+  link: /faq/

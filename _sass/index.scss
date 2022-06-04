@@ -1,4 +1,9 @@
 @import "mixin";
+// article
+.public-email {
+  margin-top: 8rem;
+}
+
 .subscription {
   background-color: $--newso-background-color-ivory-opacity-90;
   padding: 15.8rem 0 7rem 0;
@@ -371,6 +376,9 @@
 }
 
 @media screen and (max-width: 700px) {
+  .public-email {
+    margin-top: 3rem;
+  }
   // 설명부분 43.75
   .description-content-wrapper {
     padding: 0 28px;

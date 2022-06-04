@@ -1,0 +1,141 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: 뉴소레터
+custom_css:
+  - article
+custom_js:
+  - app
+---
+
+<section class="newso-story newso-article-list">
+  <div class="content-wrraper">
+    <div class="page-title">
+      <p>지난 뉴소레터</p>
+    </div>
+
+    <!-- article-grid -->
+    <div class="article-card-grid">
+      {% for post in paginator.posts %}
+      <a href="{{ post.url }}">
+        <div class="article-item">
+          <div class="article-title">{{ post.title }}</div>
+          <div class="article-date">{{ post.sent_time }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- pagination   -->
+  
+  </div>
+
+  <div class="content-wrapper">
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a class="previous" href="{{ paginator.previous_page_path | relative_url }}">
+            <svg
+              class="h-5 w-5"
+              x-description="Heroicon name: solid/chevron-left"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+        </a>
+      {% else %}
+        <span class="previous not-active">
+          <svg
+            class="h-5 w-5"
+            x-description="Heroicon name: solid/chevron-left"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      {% endif %} 
+
+      {% assign base = paginator.page | modulo: 5 %}
+
+      {% if base == 0  %}
+        {% assign base = paginator.page | divided_by: 5 | minus: 1  %} 
+      {% else %}
+        {% assign base = paginator.page | divided_by: 5  %} 
+      {% endif %}
+
+      {% assign start = base | times: 5 | plus: 1 %}
+      {% assign end =  base | plus:1 | times:5 %} 
+
+      {% if end >= paginator.total_pages  %}
+        {% assign end = paginator.total_pages %} 
+      {% endif %}
+
+      {% for page in (start..end) %} 
+        {% if page == paginator.page %}
+          <em class="page-link active-page">{{ page }}</em>
+        {% elsif page == 1 %}
+          <a class="page-link" href="{{ site.paginate_path  | relative_url | replace: '/page:num', '' }}">
+          {{ page }}
+         </a>
+        {% else %}
+         <a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">
+          {{ page }}
+         </a>
+        {% endif %} 
+      {% endfor %} 
+
+      {% if paginator.next_page %}
+       <a  class="next" href="{{ paginator.next_page_path | relative_url }}"> 
+          <svg
+          class="h-5 w-5"
+          x-description="Heroicon name: solid/chevron-right"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+       </a>
+      {% else %}
+        <span class="next not-active">
+          <svg
+          class="h-5 w-5"
+          x-description="Heroicon name: solid/chevron-right"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        </span>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
