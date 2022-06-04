@@ -24,7 +24,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack && npx gulp",
     "webpack": "./node_modules/.bin/webpack",
-    "gulp:watch": "npx gulp watch"
+    "gulp:watch": "npx gulp watch",
+    "crawl": "node ./articleCollector/main.js"
   },
   "repository": {
     "type": "git",
