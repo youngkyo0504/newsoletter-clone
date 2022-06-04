@@ -1,0 +1,64 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "designed-page" ]
+  pull_request:
+    branches: [ "designed-page" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run crawl
+    - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+      with:
+        # The name of the user that will be displayed as the author of the commit.
+        # Default: depends on the default_author input
+        author_name: Newso
+
+        # The email of the user that will be displayed as the author of the commit.
+        # Default: depends on the default_author input
+        author_email: official@antller.com
+
+        # Additional arguments for the git commit command. The --message argument is already set by the message input.
+        # Default: ''
+        commit: --signoff
+
+        # The name of the custom committer you want to use, if different from the author of the commit.
+        # Default: the name of the author (set with either author_name or default_author)
+        committer_name: Newso
+
+        # The email of the custom committer you want to use, if different from the author of the commit.
+        # Default: the email of the author (set with either author_email or default_author)
+        committer_email: official@antller.com
+
+        # The message for the commit.
+        # Default: 'Commit from GitHub Actions (name of the workflow)'
+        message: 'github action crawl commit'
+
+        # If this input is set, the action will push the commit to a new branch with this name.
+        # Default: ''
+        new_branch: custom-new-branch
+
+
+
+    
+    
